@@ -287,22 +287,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 .secondaryBackground,
                             borderRadius: BorderRadius.circular(35.0),
                           ),
-                          child: InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              context.pushNamed('SignIn');
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.network(
-                                'https://picsum.photos/seed/710/600',
-                                width: 300.0,
-                                height: 200.0,
-                                fit: BoxFit.cover,
-                              ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: Image.network(
+                              'https://picsum.photos/seed/710/600',
+                              width: 300.0,
+                              height: 200.0,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
