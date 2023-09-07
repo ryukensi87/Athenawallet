@@ -152,7 +152,7 @@ class _WelcomePageWidgetState extends State<WelcomePageWidget> {
                                           0.0, 30.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
-                                          context.pushNamed('HomePage');
+                                          context.pushNamed('HomePagePro');
                                         },
                                         text: 'Next',
                                         options: FFButtonOptions(
