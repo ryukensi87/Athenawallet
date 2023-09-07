@@ -73,9 +73,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => AkunPageWidget(),
         ),
         FFRoute(
-          name: 'HomePage2',
-          path: '/homePage2',
-          builder: (context, params) => HomePage2Widget(),
+          name: 'HomePagePro',
+          path: '/homePagePro',
+          builder: (context, params) => HomePageProWidget(),
         ),
         FFRoute(
           name: 'WalletBoarding',

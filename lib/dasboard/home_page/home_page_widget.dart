@@ -87,24 +87,30 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           decoration: BoxDecoration(
                             shape: BoxShape.rectangle,
                           ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                'Athena\nNetwork',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 15.0, 0.0),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Network');
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Icon(
+                                    Icons.add_link_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 35.0,
+                                  ),
+                                ],
                               ),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
-                                child: Image.asset(
-                                  'assets/images/fe1493cbb35c5943fbe3768f8037f5d6-removebg-preview.png',
-                                  width: 50.0,
-                                  height: 50.0,
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
                         ),
                       ),
