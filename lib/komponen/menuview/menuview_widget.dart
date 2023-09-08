@@ -48,8 +48,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -61,7 +61,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.account_balance_wallet_rounded,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -70,7 +70,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'Deposito',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),
@@ -81,8 +81,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -94,7 +94,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.currency_exchange,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -103,7 +103,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'Earn',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),
@@ -114,8 +114,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -127,7 +127,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.settings_outlined,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -136,7 +136,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'Recurring',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),
@@ -147,8 +147,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -160,7 +160,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.library_books,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -169,7 +169,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'History',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),
@@ -180,8 +180,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -193,7 +193,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.chat,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -202,7 +202,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'Chatroom',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),
@@ -213,8 +213,8 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
               child: Container(
-                width: 70.0,
-                height: 80.0,
+                width: 60.0,
+                height: 60.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(15.0),
@@ -226,7 +226,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                     Icon(
                       Icons.tips_and_updates,
                       color: Color(0xFFB239EF),
-                      size: 30.0,
+                      size: 25.0,
                     ),
                     Padding(
                       padding:
@@ -235,7 +235,7 @@ class _MenuviewWidgetState extends State<MenuviewWidget> {
                         'Academy',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
-                              fontSize: 12.0,
+                              fontSize: 10.0,
                             ),
                       ),
                     ),

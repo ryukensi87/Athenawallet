@@ -8,3 +8,5 @@ export '/dasboard/wallet_boarding/wallet_boarding_widget.dart'
 export '/dasboard/home_page/home_page_widget.dart' show HomePageWidget;
 export '/pages/network/network_widget.dart' show NetworkWidget;
 export '/tabbar/tabbar_widget.dart' show TabbarWidget;
+export '/dasboard/home_page_pro_copy/home_page_pro_copy_widget.dart'
+    show HomePageProCopyWidget;

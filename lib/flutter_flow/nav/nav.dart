@@ -96,6 +96,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'tabbar',
           path: '/tabbar',
           builder: (context, params) => TabbarWidget(),
+        ),
+        FFRoute(
+          name: 'HomePageProCopy',
+          path: '/homePageProCopy',
+          builder: (context, params) => HomePageProCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
