@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/komponen/menuview/menuview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -148,13 +147,6 @@ class _WalletBoardingWidgetState extends State<WalletBoardingWidget> {
                         ),
                       ),
                     ],
-                  ),
-                ),
-                Expanded(
-                  child: wrapWithModel(
-                    model: _model.menuviewModel,
-                    updateCallback: () => setState(() {}),
-                    child: MenuviewWidget(),
                   ),
                 ),
               ],

@@ -62,7 +62,7 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                         buttonSize: 40.0,
                         fillColor: Color(0x00FFFFFF),
                         icon: Icon(
-                          Icons.wallet,
+                          Icons.home,
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 24.0,
                         ),
@@ -71,33 +71,7 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                         },
                       ),
                       Text(
-                        'Wallet',
-                        style: FlutterFlowTheme.of(context).bodyMedium,
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      FlutterFlowIconButton(
-                        borderColor: Color(0x00FFFFFF),
-                        borderRadius: 0.0,
-                        borderWidth: 0.0,
-                        buttonSize: 40.0,
-                        fillColor: Color(0x00FFFFFF),
-                        icon: Icon(
-                          Icons.swap_calls,
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
-                        ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
-                        },
-                      ),
-                      Text(
-                        'Swap',
+                        'Home',
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ],
@@ -130,29 +104,73 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      FlutterFlowIconButton(
-                        borderColor: Color(0x00FFFFFF),
-                        borderRadius: 0.0,
-                        borderWidth: 0.0,
-                        buttonSize: 40.0,
-                        fillColor: Color(0x00FFFFFF),
-                        icon: Icon(
-                          Icons.home,
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('Network');
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Color(0x00FFFFFF),
+                          borderRadius: 0.0,
+                          borderWidth: 0.0,
+                          buttonSize: 40.0,
+                          fillColor: Color(0x00FFFFFF),
+                          icon: Icon(
+                            Icons.swap_calls,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 24.0,
+                          ),
+                          onPressed: () {
+                            print('IconButton pressed ...');
+                          },
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
-                        },
-                      ),
-                      Text(
-                        'Home',
-                        style: FlutterFlowTheme.of(context).bodyMedium,
-                      ),
-                    ],
+                        Text(
+                          'Swap',
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('AkunPage');
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Color(0x00FFFFFF),
+                          borderRadius: 0.0,
+                          borderWidth: 0.0,
+                          buttonSize: 40.0,
+                          fillColor: Color(0x00FFFFFF),
+                          icon: Icon(
+                            Icons.wallet,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 24.0,
+                          ),
+                          onPressed: () {
+                            print('IconButton pressed ...');
+                          },
+                        ),
+                        Text(
+                          'Wallet',
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

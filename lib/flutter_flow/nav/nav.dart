@@ -73,19 +73,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => AkunPageWidget(),
         ),
         FFRoute(
-          name: 'HomePagePro',
-          path: '/homePagePro',
-          builder: (context, params) => HomePageProWidget(),
-        ),
-        FFRoute(
           name: 'WalletBoarding',
           path: '/walletBoarding',
           builder: (context, params) => WalletBoardingWidget(),
-        ),
-        FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
           name: 'Network',
@@ -93,14 +83,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => NetworkWidget(),
         ),
         FFRoute(
-          name: 'tabbar',
-          path: '/tabbar',
-          builder: (context, params) => TabbarWidget(),
-        ),
-        FFRoute(
-          name: 'HomePageProCopy',
-          path: '/homePageProCopy',
-          builder: (context, params) => HomePageProCopyWidget(),
+          name: 'HomePagePro',
+          path: '/homePagePro',
+          builder: (context, params) => HomePageProWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
