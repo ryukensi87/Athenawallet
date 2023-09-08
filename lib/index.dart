@@ -7,3 +7,4 @@ export '/dasboard/wallet_boarding/wallet_boarding_widget.dart'
     show WalletBoardingWidget;
 export '/dasboard/home_page/home_page_widget.dart' show HomePageWidget;
 export '/pages/network/network_widget.dart' show NetworkWidget;
+export '/tabbar/tabbar_widget.dart' show TabbarWidget;

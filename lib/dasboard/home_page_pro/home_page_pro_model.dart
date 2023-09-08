@@ -25,6 +25,10 @@ class HomePageProModel extends FlutterFlowModel {
       : 0;
   // Model for Menuview component.
   late MenuviewModel menuviewModel;
+  // State field(s) for TabBar widget.
+  TabController? tabBarController;
+  int get tabBarCurrentIndex =>
+      tabBarController != null ? tabBarController!.index : 0;
 
   /// Initialization and disposal methods.
 
@@ -35,6 +39,7 @@ class HomePageProModel extends FlutterFlowModel {
   void dispose() {
     unfocusNode.dispose();
     menuviewModel.dispose();
+    tabBarController?.dispose();
   }
 
   /// Action blocks are added here.

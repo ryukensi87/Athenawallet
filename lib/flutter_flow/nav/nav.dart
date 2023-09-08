@@ -91,6 +91,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Network',
           path: '/network',
           builder: (context, params) => NetworkWidget(),
+        ),
+        FFRoute(
+          name: 'tabbar',
+          path: '/tabbar',
+          builder: (context, params) => TabbarWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
