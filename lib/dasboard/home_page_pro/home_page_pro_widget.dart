@@ -114,7 +114,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                 children: [
                                                   Container(
                                                     width: 150.0,
-                                                    height: 55.0,
+                                                    height: 40.0,
                                                     decoration: BoxDecoration(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -144,8 +144,8 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                             child: Stack(
                                                               children: [
                                                                 Container(
-                                                                  width: 50.0,
-                                                                  height: 50.0,
+                                                                  width: 40.0,
+                                                                  height: 40.0,
                                                                   decoration:
                                                                       BoxDecoration(
                                                                     color: Color(
@@ -162,9 +162,9 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                         .asset(
                                                                       'assets/images/fe1493cbb35c5943fbe3768f8037f5d6-removebg-preview.png',
                                                                       width:
-                                                                          50.0,
+                                                                          40.0,
                                                                       height:
-                                                                          50.0,
+                                                                          40.0,
                                                                       fit: BoxFit
                                                                           .contain,
                                                                     ),
@@ -236,7 +236,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  size: 45.0,
+                                                  size: 35.0,
                                                 ),
                                               ],
                                             ),
@@ -249,7 +249,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                           AlignmentDirectional(-0.04, -0.61),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 100.0, 0.0, 0.0),
+                                            0.0, 80.0, 0.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
                                           height: double.infinity,
@@ -530,344 +530,352 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                           child:
                                                               MenuviewWidget(),
                                                         ),
-                                                        ListView(
+                                                        Padding(
                                                           padding:
-                                                              EdgeInsets.zero,
-                                                          reverse: true,
-                                                          shrinkWrap: true,
-                                                          scrollDirection:
-                                                              Axis.vertical,
-                                                          children: [
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          10.0,
-                                                                          0.0,
-                                                                          10.0,
-                                                                          0.0),
-                                                              child:
-                                                                  SingleChildScrollView(
-                                                                scrollDirection:
-                                                                    Axis.horizontal,
-                                                                child: Row(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  children: [
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          5.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Container(
-                                                                        width:
-                                                                            120.0,
-                                                                        height:
-                                                                            100.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryBackground,
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8.0),
-                                                                        ),
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      15.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: ListView(
+                                                            padding:
+                                                                EdgeInsets.zero,
+                                                            reverse: true,
+                                                            shrinkWrap: true,
+                                                            scrollDirection:
+                                                                Axis.vertical,
+                                                            children: [
+                                                              Padding(
+                                                                padding: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        10.0,
+                                                                        0.0,
+                                                                        10.0,
+                                                                        0.0),
+                                                                child:
+                                                                    SingleChildScrollView(
+                                                                  scrollDirection:
+                                                                      Axis.horizontal,
+                                                                  child: Row(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    children: [
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            0.0),
                                                                         child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.center,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 30.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                  child: Text(
-                                                                                    'BTC/IDR',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'BTC/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                    ),
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ),
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 50.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Column(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                  children: [
-                                                                                    Text(
-                                                                                      '396.508.000',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                    Text(
-                                                                                      '+0.38 %',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Readex Pro',
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                          ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          5.0,
-                                                                          0.0,
-                                                                          5.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Container(
-                                                                        width:
-                                                                            120.0,
-                                                                        height:
-                                                                            100.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryBackground,
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8.0),
-                                                                        ),
-                                                                        child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.center,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 30.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                  child: Text(
-                                                                                    'ETH/IDR',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '396.508.000',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                      ),
+                                                                                      Text(
+                                                                                        '+0.38 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ),
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 50.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Column(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                  children: [
-                                                                                    Text(
-                                                                                      '25.135.000',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                    Text(
-                                                                                      '+0.55 %',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Readex Pro',
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                          ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ],
+                                                                            ],
+                                                                          ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          5.0,
-                                                                          0.0,
-                                                                          5.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Container(
-                                                                        width:
-                                                                            120.0,
-                                                                        height:
-                                                                            100.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryBackground,
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8.0),
-                                                                        ),
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            0.0),
                                                                         child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.center,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 30.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                  child: Text(
-                                                                                    'USDT/IDR',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'ETH/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                    ),
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ),
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 50.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Column(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                  children: [
-                                                                                    Text(
-                                                                                      '15.354',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                    Text(
-                                                                                      '+0.11 %',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Readex Pro',
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                          ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          5.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Container(
-                                                                        width:
-                                                                            120.0,
-                                                                        height:
-                                                                            100.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryBackground,
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8.0),
-                                                                        ),
-                                                                        child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.center,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 30.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                  child: Text(
-                                                                                    'BNB/IDR',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '25.135.000',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                      ),
+                                                                                      Text(
+                                                                                        '+0.55 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ),
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                              child: Container(
-                                                                                width: 100.0,
-                                                                                height: 50.0,
-                                                                                decoration: BoxDecoration(
-                                                                                  color: Color(0x00FFFFFF),
-                                                                                ),
-                                                                                child: Column(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                  children: [
-                                                                                    Text(
-                                                                                      '3.319.000',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                    Text(
-                                                                                      '+0.92 %',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Readex Pro',
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                          ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ],
+                                                                            ],
+                                                                          ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                  ],
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'USDT/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                    ),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '15.354',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                      ),
+                                                                                      Text(
+                                                                                        '+0.11 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'BNB/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                    ),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '3.319.000',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                      ),
+                                                                                      Text(
+                                                                                        '+0.92 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
                                                                 ),
                                                               ),
-                                                            ),
-                                                          ],
+                                                            ],
+                                                          ),
                                                         ),
                                                         Padding(
                                                           padding:
@@ -880,7 +888,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                           child: Container(
                                                             width:
                                                                 double.infinity,
-                                                            height: 100.0,
+                                                            height: 500.0,
                                                             decoration:
                                                                 BoxDecoration(
                                                               color: FlutterFlowTheme
@@ -955,1865 +963,5875 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                         _model
                                                                             .tabBarController,
                                                                     children: [
-                                                                      Column(
-                                                                        mainAxisSize:
-                                                                            MainAxisSize.max,
-                                                                        children: [
-                                                                          Expanded(
-                                                                            child:
-                                                                                Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  width: 130.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    borderRadius: BorderRadius.only(
-                                                                                      bottomLeft: Radius.circular(15.0),
-                                                                                      bottomRight: Radius.circular(0.0),
-                                                                                      topLeft: Radius.circular(15.0),
-                                                                                      topRight: Radius.circular(0.0),
-                                                                                    ),
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                    child: Row(
+                                                                      Container(
+                                                                        width:
+                                                                            100.0,
+                                                                        height:
+                                                                            660.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                        ),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              15.0),
+                                                                          child:
+                                                                              Stack(
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                child: Stack(
+                                                                                  children: [
+                                                                                    Row(
                                                                                       mainAxisSize: MainAxisSize.max,
-                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        Text(
-                                                                                          'Name',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Readex Pro',
-                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                fontSize: 14.0,
-                                                                                              ),
+                                                                                        Container(
+                                                                                          width: 130.0,
+                                                                                          height: 50.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            borderRadius: BorderRadius.only(
+                                                                                              bottomLeft: Radius.circular(15.0),
+                                                                                              bottomRight: Radius.circular(0.0),
+                                                                                              topLeft: Radius.circular(15.0),
+                                                                                              topRight: Radius.circular(0.0),
+                                                                                            ),
+                                                                                            border: Border.all(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                            child: Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                              children: [
+                                                                                                Text(
+                                                                                                  'Name',
+                                                                                                  textAlign: TextAlign.start,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: 'Readex Pro',
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontSize: 14.0,
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                  child: Icon(
+                                                                                                    Icons.swap_vert,
+                                                                                                    color: Color(0xFFE3181B),
+                                                                                                    size: 24.0,
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ],
+                                                                                            ),
+                                                                                          ),
                                                                                         ),
-                                                                                        Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                          child: Icon(
-                                                                                            Icons.swap_vert,
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                            size: 24.0,
+                                                                                        Expanded(
+                                                                                          child: Container(
+                                                                                            width: 100.0,
+                                                                                            height: 50.0,
+                                                                                            decoration: BoxDecoration(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                              borderRadius: BorderRadius.only(
+                                                                                                bottomLeft: Radius.circular(0.0),
+                                                                                                bottomRight: Radius.circular(15.0),
+                                                                                                topLeft: Radius.circular(0.0),
+                                                                                                topRight: Radius.circular(15.0),
+                                                                                              ),
+                                                                                            ),
+                                                                                            child: Padding(
+                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                              child: Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                                children: [
+                                                                                                  Text(
+                                                                                                    'Price',
+                                                                                                    textAlign: TextAlign.start,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Readex Pro',
+                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                          fontSize: 14.0,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Text(
+                                                                                                      '24 Chg',
+                                                                                                      textAlign: TextAlign.start,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Readex Pro',
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            fontSize: 14.0,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ],
+                                                                                              ),
+                                                                                            ),
                                                                                           ),
                                                                                         ),
                                                                                       ],
                                                                                     ),
-                                                                                  ),
+                                                                                  ],
                                                                                 ),
-                                                                                Expanded(
-                                                                                  child: Container(
-                                                                                    width: 100.0,
-                                                                                    height: 100.0,
-                                                                                    decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                      borderRadius: BorderRadius.only(
-                                                                                        bottomLeft: Radius.circular(0.0),
-                                                                                        bottomRight: Radius.circular(15.0),
-                                                                                        topLeft: Radius.circular(0.0),
-                                                                                        topRight: Radius.circular(15.0),
-                                                                                      ),
-                                                                                    ),
-                                                                                    child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                                                                                      child: Row(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.end,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            'Price',
-                                                                                            textAlign: TextAlign.start,
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                  fontSize: 14.0,
-                                                                                                ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Text(
-                                                                                              '24 Chg',
-                                                                                              textAlign: TextAlign.start,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Readex Pro',
-                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                    fontSize: 14.0,
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                                                                                child: SingleChildScrollView(
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
                                                                                                   ),
-                                                                                            ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
                                                                                           ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                        ],
+                                                                                        ),
                                                                                       ),
-                                                                                    ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
-                                                                              ],
-                                                                            ),
+                                                                              ),
+                                                                            ],
                                                                           ),
-                                                                        ],
+                                                                        ),
                                                                       ),
-                                                                      Column(
-                                                                        mainAxisSize:
-                                                                            MainAxisSize.max,
-                                                                        children: [
-                                                                          Expanded(
-                                                                            child:
-                                                                                Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  width: 130.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    borderRadius: BorderRadius.only(
-                                                                                      bottomLeft: Radius.circular(15.0),
-                                                                                      bottomRight: Radius.circular(0.0),
-                                                                                      topLeft: Radius.circular(15.0),
-                                                                                      topRight: Radius.circular(0.0),
-                                                                                    ),
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                    child: Row(
+                                                                      Container(
+                                                                        width:
+                                                                            100.0,
+                                                                        height:
+                                                                            660.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                        ),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              15.0),
+                                                                          child:
+                                                                              Stack(
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                child: Stack(
+                                                                                  children: [
+                                                                                    Row(
                                                                                       mainAxisSize: MainAxisSize.max,
-                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        Text(
-                                                                                          'Name',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Readex Pro',
-                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                fontSize: 14.0,
-                                                                                              ),
+                                                                                        Container(
+                                                                                          width: 130.0,
+                                                                                          height: 50.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            borderRadius: BorderRadius.only(
+                                                                                              bottomLeft: Radius.circular(15.0),
+                                                                                              bottomRight: Radius.circular(0.0),
+                                                                                              topLeft: Radius.circular(15.0),
+                                                                                              topRight: Radius.circular(0.0),
+                                                                                            ),
+                                                                                            border: Border.all(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                            child: Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                              children: [
+                                                                                                Text(
+                                                                                                  'Name',
+                                                                                                  textAlign: TextAlign.start,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: 'Readex Pro',
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontSize: 14.0,
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                  child: Icon(
+                                                                                                    Icons.swap_vert,
+                                                                                                    color: Color(0xFFE3181B),
+                                                                                                    size: 24.0,
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ],
+                                                                                            ),
+                                                                                          ),
                                                                                         ),
-                                                                                        Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                          child: Icon(
-                                                                                            Icons.swap_vert,
-                                                                                            color: FlutterFlowTheme.of(context).secondary,
-                                                                                            size: 24.0,
+                                                                                        Expanded(
+                                                                                          child: Container(
+                                                                                            width: 100.0,
+                                                                                            height: 50.0,
+                                                                                            decoration: BoxDecoration(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                              borderRadius: BorderRadius.only(
+                                                                                                bottomLeft: Radius.circular(0.0),
+                                                                                                bottomRight: Radius.circular(15.0),
+                                                                                                topLeft: Radius.circular(0.0),
+                                                                                                topRight: Radius.circular(15.0),
+                                                                                              ),
+                                                                                            ),
+                                                                                            child: Padding(
+                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                              child: Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                                children: [
+                                                                                                  Text(
+                                                                                                    'Price',
+                                                                                                    textAlign: TextAlign.start,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Readex Pro',
+                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                          fontSize: 14.0,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Text(
+                                                                                                      '24 Chg',
+                                                                                                      textAlign: TextAlign.start,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Readex Pro',
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            fontSize: 14.0,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ],
+                                                                                              ),
+                                                                                            ),
                                                                                           ),
                                                                                         ),
                                                                                       ],
                                                                                     ),
-                                                                                  ),
+                                                                                  ],
                                                                                 ),
-                                                                                Expanded(
-                                                                                  child: Container(
-                                                                                    width: 100.0,
-                                                                                    height: 100.0,
-                                                                                    decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                      borderRadius: BorderRadius.only(
-                                                                                        bottomLeft: Radius.circular(0.0),
-                                                                                        bottomRight: Radius.circular(15.0),
-                                                                                        topLeft: Radius.circular(0.0),
-                                                                                        topRight: Radius.circular(15.0),
-                                                                                      ),
-                                                                                    ),
-                                                                                    child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                                                                                      child: Row(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.end,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            'Price',
-                                                                                            textAlign: TextAlign.start,
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                  fontSize: 14.0,
-                                                                                                ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Text(
-                                                                                              '24 Chg',
-                                                                                              textAlign: TextAlign.start,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Readex Pro',
-                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                    fontSize: 14.0,
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                                                                                child: SingleChildScrollView(
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
                                                                                                   ),
-                                                                                            ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
                                                                                           ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                        ],
+                                                                                        ),
                                                                                       ),
-                                                                                    ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
-                                                                              ],
-                                                                            ),
+                                                                              ),
+                                                                            ],
                                                                           ),
-                                                                        ],
+                                                                        ),
                                                                       ),
-                                                                      Column(
-                                                                        mainAxisSize:
-                                                                            MainAxisSize.max,
-                                                                        children: [
-                                                                          Expanded(
-                                                                            child:
-                                                                                Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  width: 130.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    borderRadius: BorderRadius.only(
-                                                                                      bottomLeft: Radius.circular(15.0),
-                                                                                      bottomRight: Radius.circular(0.0),
-                                                                                      topLeft: Radius.circular(15.0),
-                                                                                      topRight: Radius.circular(0.0),
-                                                                                    ),
-                                                                                    border: Border.all(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    ),
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                    child: Row(
+                                                                      Container(
+                                                                        width:
+                                                                            100.0,
+                                                                        height:
+                                                                            660.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                        ),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              15.0),
+                                                                          child:
+                                                                              Stack(
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                child: Stack(
+                                                                                  children: [
+                                                                                    Row(
                                                                                       mainAxisSize: MainAxisSize.max,
-                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        Text(
-                                                                                          'Name',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Readex Pro',
-                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                fontSize: 14.0,
-                                                                                              ),
+                                                                                        Container(
+                                                                                          width: 130.0,
+                                                                                          height: 50.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            borderRadius: BorderRadius.only(
+                                                                                              bottomLeft: Radius.circular(15.0),
+                                                                                              bottomRight: Radius.circular(0.0),
+                                                                                              topLeft: Radius.circular(15.0),
+                                                                                              topRight: Radius.circular(0.0),
+                                                                                            ),
+                                                                                            border: Border.all(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                            child: Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                              children: [
+                                                                                                Text(
+                                                                                                  'Name',
+                                                                                                  textAlign: TextAlign.start,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: 'Readex Pro',
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontSize: 14.0,
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                  child: Icon(
+                                                                                                    Icons.swap_vert,
+                                                                                                    color: Color(0xFFE3181B),
+                                                                                                    size: 24.0,
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ],
+                                                                                            ),
+                                                                                          ),
                                                                                         ),
-                                                                                        Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                          child: Icon(
-                                                                                            Icons.swap_vert,
-                                                                                            color: Color(0xFFE3181B),
-                                                                                            size: 24.0,
+                                                                                        Expanded(
+                                                                                          child: Container(
+                                                                                            width: 100.0,
+                                                                                            height: 50.0,
+                                                                                            decoration: BoxDecoration(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                              borderRadius: BorderRadius.only(
+                                                                                                bottomLeft: Radius.circular(0.0),
+                                                                                                bottomRight: Radius.circular(15.0),
+                                                                                                topLeft: Radius.circular(0.0),
+                                                                                                topRight: Radius.circular(15.0),
+                                                                                              ),
+                                                                                            ),
+                                                                                            child: Padding(
+                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                              child: Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                                children: [
+                                                                                                  Text(
+                                                                                                    'Price',
+                                                                                                    textAlign: TextAlign.start,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Readex Pro',
+                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                          fontSize: 14.0,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Text(
+                                                                                                      '24 Chg',
+                                                                                                      textAlign: TextAlign.start,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Readex Pro',
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            fontSize: 14.0,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ],
+                                                                                              ),
+                                                                                            ),
                                                                                           ),
                                                                                         ),
                                                                                       ],
                                                                                     ),
-                                                                                  ),
+                                                                                  ],
                                                                                 ),
-                                                                                Expanded(
-                                                                                  child: Container(
-                                                                                    width: 100.0,
-                                                                                    height: 100.0,
-                                                                                    decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                      borderRadius: BorderRadius.only(
-                                                                                        bottomLeft: Radius.circular(0.0),
-                                                                                        bottomRight: Radius.circular(15.0),
-                                                                                        topLeft: Radius.circular(0.0),
-                                                                                        topRight: Radius.circular(15.0),
-                                                                                      ),
-                                                                                    ),
-                                                                                    child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                                                                                      child: Row(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.end,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            'Price',
-                                                                                            textAlign: TextAlign.start,
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                  fontSize: 14.0,
-                                                                                                ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: Color(0xFFE3181B),
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Text(
-                                                                                              '24 Chg',
-                                                                                              textAlign: TextAlign.start,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Readex Pro',
-                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                    fontSize: 14.0,
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                                                                                child: SingleChildScrollView(
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
                                                                                                   ),
-                                                                                            ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
                                                                                           ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: Color(0xFFE3181B),
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                        ],
+                                                                                        ),
                                                                                       ),
-                                                                                    ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
-                                                                              ],
-                                                                            ),
+                                                                              ),
+                                                                            ],
                                                                           ),
-                                                                        ],
+                                                                        ),
                                                                       ),
-                                                                      Column(
-                                                                        mainAxisSize:
-                                                                            MainAxisSize.max,
-                                                                        children: [
-                                                                          Expanded(
-                                                                            child:
-                                                                                Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  width: 130.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    borderRadius: BorderRadius.only(
-                                                                                      bottomLeft: Radius.circular(15.0),
-                                                                                      bottomRight: Radius.circular(0.0),
-                                                                                      topLeft: Radius.circular(15.0),
-                                                                                      topRight: Radius.circular(0.0),
-                                                                                    ),
-                                                                                    border: Border.all(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                    ),
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                    child: Row(
+                                                                      Container(
+                                                                        width:
+                                                                            100.0,
+                                                                        height:
+                                                                            660.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                        ),
+                                                                        child:
+                                                                            Padding(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              15.0),
+                                                                          child:
+                                                                              Stack(
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                child: Stack(
+                                                                                  children: [
+                                                                                    Row(
                                                                                       mainAxisSize: MainAxisSize.max,
-                                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        Text(
-                                                                                          'Name',
-                                                                                          textAlign: TextAlign.start,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Readex Pro',
-                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                fontSize: 14.0,
-                                                                                              ),
+                                                                                        Container(
+                                                                                          width: 130.0,
+                                                                                          height: 50.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            borderRadius: BorderRadius.only(
+                                                                                              bottomLeft: Radius.circular(15.0),
+                                                                                              bottomRight: Radius.circular(0.0),
+                                                                                              topLeft: Radius.circular(15.0),
+                                                                                              topRight: Radius.circular(0.0),
+                                                                                            ),
+                                                                                            border: Border.all(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                            child: Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                              children: [
+                                                                                                Text(
+                                                                                                  'Name',
+                                                                                                  textAlign: TextAlign.start,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: 'Readex Pro',
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontSize: 14.0,
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                  child: Icon(
+                                                                                                    Icons.swap_vert,
+                                                                                                    color: Color(0xFFE3181B),
+                                                                                                    size: 24.0,
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ],
+                                                                                            ),
+                                                                                          ),
                                                                                         ),
-                                                                                        Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                          child: Icon(
-                                                                                            Icons.swap_vert,
-                                                                                            color: FlutterFlowTheme.of(context).tertiary,
-                                                                                            size: 24.0,
+                                                                                        Expanded(
+                                                                                          child: Container(
+                                                                                            width: 100.0,
+                                                                                            height: 50.0,
+                                                                                            decoration: BoxDecoration(
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                              borderRadius: BorderRadius.only(
+                                                                                                bottomLeft: Radius.circular(0.0),
+                                                                                                bottomRight: Radius.circular(15.0),
+                                                                                                topLeft: Radius.circular(0.0),
+                                                                                                topRight: Radius.circular(15.0),
+                                                                                              ),
+                                                                                            ),
+                                                                                            child: Padding(
+                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                              child: Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                                children: [
+                                                                                                  Text(
+                                                                                                    'Price',
+                                                                                                    textAlign: TextAlign.start,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Readex Pro',
+                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                          fontSize: 14.0,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Text(
+                                                                                                      '24 Chg',
+                                                                                                      textAlign: TextAlign.start,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Readex Pro',
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            fontSize: 14.0,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  Padding(
+                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                    child: Icon(
+                                                                                                      Icons.swap_vert,
+                                                                                                      color: Color(0xFFE3181B),
+                                                                                                      size: 24.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ],
+                                                                                              ),
+                                                                                            ),
                                                                                           ),
                                                                                         ),
                                                                                       ],
                                                                                     ),
-                                                                                  ),
+                                                                                  ],
                                                                                 ),
-                                                                                Expanded(
-                                                                                  child: Container(
-                                                                                    width: 100.0,
-                                                                                    height: 100.0,
-                                                                                    decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                      borderRadius: BorderRadius.only(
-                                                                                        bottomLeft: Radius.circular(0.0),
-                                                                                        bottomRight: Radius.circular(15.0),
-                                                                                        topLeft: Radius.circular(0.0),
-                                                                                        topRight: Radius.circular(15.0),
-                                                                                      ),
-                                                                                    ),
-                                                                                    child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                                                                                      child: Row(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.end,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            'Price',
-                                                                                            textAlign: TextAlign.start,
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                  fontSize: 14.0,
-                                                                                                ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).tertiary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Text(
-                                                                                              '24 Chg',
-                                                                                              textAlign: TextAlign.start,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Readex Pro',
-                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                    fontSize: 14.0,
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                                                                                child: SingleChildScrollView(
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
                                                                                                   ),
-                                                                                            ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
                                                                                           ),
-                                                                                          Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
-                                                                                            child: Icon(
-                                                                                              Icons.swap_vert,
-                                                                                              color: FlutterFlowTheme.of(context).tertiary,
-                                                                                              size: 24.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                        ],
+                                                                                        ),
                                                                                       ),
-                                                                                    ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        child: SingleChildScrollView(
+                                                                                          scrollDirection: Axis.horizontal,
+                                                                                          child: Row(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BTC/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '396.508.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.38 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'ETH/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '25.135.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.55 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'USDT/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '15.354',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.11 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                              Padding(
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                                child: Container(
+                                                                                                  width: 120.0,
+                                                                                                  height: 100.0,
+                                                                                                  decoration: BoxDecoration(
+                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                                  ),
+                                                                                                  child: Column(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                    children: [
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 30.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Align(
+                                                                                                            alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                                            child: Text(
+                                                                                                              'BNB/IDR',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          width: 100.0,
+                                                                                                          height: 50.0,
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            color: Color(0x00FFFFFF),
+                                                                                                          ),
+                                                                                                          child: Column(
+                                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                            children: [
+                                                                                                              Text(
+                                                                                                                '3.319.000',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                              ),
+                                                                                                              Text(
+                                                                                                                '+0.92 %',
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                      fontFamily: 'Readex Pro',
+                                                                                                                      color: FlutterFlowTheme.of(context).secondary,
+                                                                                                                    ),
+                                                                                                              ),
+                                                                                                            ],
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
                                                                                   ),
                                                                                 ),
-                                                                              ],
-                                                                            ),
+                                                                              ),
+                                                                            ],
                                                                           ),
-                                                                        ],
+                                                                        ),
                                                                       ),
                                                                     ],
                                                                   ),
                                                                 ),
                                                               ],
                                                             ),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: ListView(
-                                                            padding:
-                                                                EdgeInsets.zero,
-                                                            reverse: true,
-                                                            shrinkWrap: true,
-                                                            scrollDirection:
-                                                                Axis.vertical,
-                                                            children: [
-                                                              Padding(
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                                child:
-                                                                    SingleChildScrollView(
-                                                                  scrollDirection:
-                                                                      Axis.horizontal,
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BTC/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '396.508.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.38 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'ETH/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '25.135.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.55 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'USDT/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '15.354',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.11 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BNB/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '3.319.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.92 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: ListView(
-                                                            padding:
-                                                                EdgeInsets.zero,
-                                                            reverse: true,
-                                                            shrinkWrap: true,
-                                                            scrollDirection:
-                                                                Axis.vertical,
-                                                            children: [
-                                                              Padding(
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                                child:
-                                                                    SingleChildScrollView(
-                                                                  scrollDirection:
-                                                                      Axis.horizontal,
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BTC/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '396.508.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.38 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'ETH/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '25.135.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.55 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'USDT/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '15.354',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.11 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BNB/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '3.319.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.92 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: ListView(
-                                                            padding:
-                                                                EdgeInsets.zero,
-                                                            reverse: true,
-                                                            shrinkWrap: true,
-                                                            scrollDirection:
-                                                                Axis.vertical,
-                                                            children: [
-                                                              Padding(
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                                child:
-                                                                    SingleChildScrollView(
-                                                                  scrollDirection:
-                                                                      Axis.horizontal,
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BTC/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '396.508.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.38 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'ETH/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '25.135.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.55 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'USDT/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '15.354',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.11 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BNB/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '3.319.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.92 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0,
-                                                                      20.0),
-                                                          child: ListView(
-                                                            padding:
-                                                                EdgeInsets.zero,
-                                                            reverse: true,
-                                                            shrinkWrap: true,
-                                                            scrollDirection:
-                                                                Axis.vertical,
-                                                            children: [
-                                                              Padding(
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        10.0,
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0),
-                                                                child:
-                                                                    SingleChildScrollView(
-                                                                  scrollDirection:
-                                                                      Axis.horizontal,
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BTC/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '396.508.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.38 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'ETH/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '25.135.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.55 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            5.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'USDT/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '15.354',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.11 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            5.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'BNB/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '3.319.000',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                      ),
-                                                                                      Text(
-                                                                                        '+0.92 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                      ),
-                                                                                    ],
-                                                                                  ),
-                                                                                ),
-                                                                              ),
-                                                                            ],
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
                                                           ),
                                                         ),
                                                       ],

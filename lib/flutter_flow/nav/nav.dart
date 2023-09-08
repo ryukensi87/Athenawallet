@@ -86,6 +86,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HomePagePro',
           path: '/homePagePro',
           builder: (context, params) => HomePageProWidget(),
+        ),
+        FFRoute(
+          name: 'asdsa',
+          path: '/asdsa',
+          builder: (context, params) => AsdsaWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

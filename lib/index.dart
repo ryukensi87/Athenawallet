@@ -6,3 +6,4 @@ export '/dasboard/wallet_boarding/wallet_boarding_widget.dart'
 export '/pages/network/network_widget.dart' show NetworkWidget;
 export '/dasboard/home_page_pro/home_page_pro_widget.dart'
     show HomePageProWidget;
+export '/asdsa/asdsa_widget.dart' show AsdsaWidget;
