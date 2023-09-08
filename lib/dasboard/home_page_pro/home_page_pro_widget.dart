@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/komponen/menuview/menuview_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
@@ -27,12 +29,11 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
   final animationsMap = {
     'iconOnPageLoadAnimation': AnimationInfo(
       loop: true,
-      reverse: true,
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         RotateEffect(
           curve: Curves.easeInOut,
-          delay: 500.ms,
+          delay: 1000.ms,
           duration: 600.ms,
           begin: 0.0,
           end: 1.0,
@@ -150,7 +151,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 10.0, 0.0),
                                         child: Icon(
-                                          Icons.toggle_on,
+                                          Icons.refresh,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           size: 24.0,
@@ -262,7 +263,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 1.0),
+                                  alignment: AlignmentDirectional(-1.00, 1.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 16.0),
@@ -305,21 +306,20 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Expanded(
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(0.00, 0.00),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   30.0, 0.0, 30.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                height: 30.0,
+                                height: 25.0,
                                 decoration: BoxDecoration(
                                   color: Color(0x8B57636C),
                                   borderRadius: BorderRadius.circular(15.0),
@@ -327,15 +327,20 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          15.0, 0.0, 0.0, 0.0),
-                                      child: Icon(
-                                        Icons.campaign_sharp,
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        size: 30.0,
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            15.0, 0.0, 0.0, 0.0),
+                                        child: Icon(
+                                          Icons.campaign_sharp,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          size: 25.0,
+                                        ),
                                       ),
                                     ),
                                     Padding(
@@ -350,7 +355,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              fontSize: 18.0,
+                                              fontSize: 14.0,
                                             ),
                                       ),
                                     ),
@@ -363,229 +368,10 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                       ],
                     ),
                   ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                    child: Stack(
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
-                          child: SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 5.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.account_balance_wallet_rounded,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Deposito',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 5.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.currency_exchange,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Earn',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 5.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.settings_outlined,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Recurring',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 5.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.library_books,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'History',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 5.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.chat,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Chatroom',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 0.0, 0.0),
-                                  child: Container(
-                                    width: 70.0,
-                                    height: 80.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.tips_and_updates,
-                                          color: Color(0xFFB239EF),
-                                          size: 35.0,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Academy',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                  wrapWithModel(
+                    model: _model.menuviewModel,
+                    updateCallback: () => setState(() {}),
+                    child: MenuviewWidget(),
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
@@ -629,7 +415,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.0, 0.0),
+                                                  -1.00, 0.00),
                                               child: Text(
                                                 'BTC/IDR',
                                                 style:
@@ -714,7 +500,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.0, 0.0),
+                                                  -1.00, 0.00),
                                               child: Text(
                                                 'ETH/IDR',
                                                 style:
@@ -799,7 +585,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.0, 0.0),
+                                                  -1.00, 0.00),
                                               child: Text(
                                                 'USDT/IDR',
                                                 style:
@@ -884,7 +670,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.0, 0.0),
+                                                  -1.00, 0.00),
                                               child: Text(
                                                 'BNB/IDR',
                                                 style:
