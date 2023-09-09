@@ -10,19 +10,6 @@ export 'api_manager.dart' show ApiCallResponse;
 
 const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
-class StatusCall {
-  static Future<ApiCallResponse> call() async {
-    final response = await makeCloudCall(
-      _kPrivateApiFunctionName,
-      {
-        'callName': 'StatusCall',
-        'variables': {},
-      },
-    );
-    return ApiCallResponse.fromCloudCallResponse(response);
-  }
-}
-
 class CreditCall {
   static Future<ApiCallResponse> call() async {
     final response = await makeCloudCall(

@@ -61,35 +61,13 @@ class _ShowcardWidgetState extends State<ShowcardWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 650.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        boxShadow: [
-                                          BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x33000000),
-                                            offset: Offset(0.0, 2.0),
-                                          )
-                                        ],
-                                      ),
-                                      child: FlutterFlowWebView(
-                                        content:
-                                            'https://poocoin.app/tokens/0x5d37abafd5498b0e7af753a2e83bd4f0335aa89f',
-                                        bypass: false,
-                                        height: 750.0,
-                                        verticalScroll: false,
-                                        horizontalScroll: false,
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                              child: FlutterFlowWebView(
+                                content:
+                                    'https://poocoin.app/tokens/0x5d37abafd5498b0e7af753a2e83bd4f0335aa89f',
+                                bypass: false,
+                                height: 850.0,
+                                verticalScroll: false,
+                                horizontalScroll: false,
                               ),
                             ),
                           ],
