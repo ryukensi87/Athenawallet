@@ -61,37 +61,44 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   ),
                 )
               : WelcomePageWidget(),
+          routes: [
+            FFRoute(
+              name: 'WelcomePage',
+              path: 'welcomePage',
+              builder: (context, params) => WelcomePageWidget(),
+            ),
+            FFRoute(
+              name: 'AkunPage',
+              path: 'akunPage',
+              builder: (context, params) => AkunPageWidget(),
+            ),
+            FFRoute(
+              name: 'WalletBoarding',
+              path: 'walletBoarding',
+              builder: (context, params) => WalletBoardingWidget(),
+            ),
+            FFRoute(
+              name: 'Network',
+              path: 'network',
+              builder: (context, params) => NetworkWidget(),
+            ),
+            FFRoute(
+              name: 'HomePagePro',
+              path: 'homePagePro',
+              builder: (context, params) => HomePageProWidget(),
+            ),
+            FFRoute(
+              name: 'asdsa',
+              path: 'asdsa',
+              builder: (context, params) => AsdsaWidget(),
+            ),
+            FFRoute(
+              name: 'showcard',
+              path: 'showcard',
+              builder: (context, params) => ShowcardWidget(),
+            )
+          ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
-        FFRoute(
-          name: 'WelcomePage',
-          path: '/welcomePage',
-          builder: (context, params) => WelcomePageWidget(),
-        ),
-        FFRoute(
-          name: 'AkunPage',
-          path: '/akunPage',
-          builder: (context, params) => AkunPageWidget(),
-        ),
-        FFRoute(
-          name: 'WalletBoarding',
-          path: '/walletBoarding',
-          builder: (context, params) => WalletBoardingWidget(),
-        ),
-        FFRoute(
-          name: 'Network',
-          path: '/network',
-          builder: (context, params) => NetworkWidget(),
-        ),
-        FFRoute(
-          name: 'HomePagePro',
-          path: '/homePagePro',
-          builder: (context, params) => HomePageProWidget(),
-        ),
-        FFRoute(
-          name: 'asdsa',
-          path: '/asdsa',
-          builder: (context, params) => AsdsaWidget(),
-        )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 

@@ -78,29 +78,38 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                   ),
                 ),
                 Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      FlutterFlowIconButton(
-                        borderColor: Color(0x00FFFFFF),
-                        borderRadius: 0.0,
-                        borderWidth: 0.0,
-                        buttonSize: 40.0,
-                        fillColor: Color(0x00FFFFFF),
-                        icon: Icon(
-                          Icons.bar_chart_outlined,
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('showcard');
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Color(0x00FFFFFF),
+                          borderRadius: 0.0,
+                          borderWidth: 0.0,
+                          buttonSize: 40.0,
+                          fillColor: Color(0x00FFFFFF),
+                          icon: Icon(
+                            Icons.bar_chart_outlined,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 24.0,
+                          ),
+                          onPressed: () {
+                            print('IconButton pressed ...');
+                          },
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
-                        },
-                      ),
-                      Text(
-                        'Market',
-                        style: FlutterFlowTheme.of(context).bodyMedium,
-                      ),
-                    ],
+                        Text(
+                          'Market',
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(

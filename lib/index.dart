@@ -7,3 +7,4 @@ export '/pages/network/network_widget.dart' show NetworkWidget;
 export '/dasboard/home_page_pro/home_page_pro_widget.dart'
     show HomePageProWidget;
 export '/asdsa/asdsa_widget.dart' show AsdsaWidget;
+export '/showcard/showcard_widget.dart' show ShowcardWidget;
