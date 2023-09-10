@@ -66,8 +66,8 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 24.0,
                         ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('HomePagePro');
                         },
                       ),
                       Text(
@@ -100,8 +100,8 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('showcard');
                           },
                         ),
                         Text(
@@ -135,8 +135,8 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('Network');
                           },
                         ),
                         Text(
@@ -154,7 +154,7 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed('AkunPage');
+                      context.pushNamed('Login');
                     },
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -170,8 +170,8 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('Login');
                           },
                         ),
                         Text(

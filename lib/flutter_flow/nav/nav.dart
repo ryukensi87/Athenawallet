@@ -96,6 +96,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'showcard',
               path: 'showcard',
               builder: (context, params) => ShowcardWidget(),
+            ),
+            FFRoute(
+              name: 'Login',
+              path: 'login',
+              builder: (context, params) => LoginWidget(),
+            ),
+            FFRoute(
+              name: 'register',
+              path: 'register',
+              builder: (context, params) => RegisterWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
