@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -224,12 +225,25 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                               mainAxisAlignment:
                                                   MainAxisAlignment.spaceEvenly,
                                               children: [
-                                                Icon(
-                                                  Icons.search,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  size: 30.0,
+                                                InkWell(
+                                                  splashColor:
+                                                      Colors.transparent,
+                                                  focusColor:
+                                                      Colors.transparent,
+                                                  hoverColor:
+                                                      Colors.transparent,
+                                                  highlightColor:
+                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    context.pushNamed('asdsa');
+                                                  },
+                                                  child: Icon(
+                                                    Icons.search,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    size: 30.0,
+                                                  ),
                                                 ),
                                                 Icon(
                                                   Icons.account_circle_sharp,
@@ -722,75 +736,90 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                             0.0,
                                                                             5.0,
                                                                             0.0),
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              120.0,
-                                                                          height:
-                                                                              100.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
-                                                                          ),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            mainAxisAlignment:
-                                                                                MainAxisAlignment.center,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children: [
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 30.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Align(
-                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                    child: Text(
-                                                                                      'USDT/IDR',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                        child: FutureBuilder<
+                                                                            ApiCallResponse>(
+                                                                          future: LiveCoinWatchGroup
+                                                                              .overviewCall
+                                                                              .call(),
+                                                                          builder:
+                                                                              (context, snapshot) {
+                                                                            // Customize what your widget looks like when it's loading.
+                                                                            if (!snapshot.hasData) {
+                                                                              return Center(
+                                                                                child: SizedBox(
+                                                                                  width: 50.0,
+                                                                                  height: 50.0,
+                                                                                  child: CircularProgressIndicator(
+                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
+                                                                              );
+                                                                            }
+                                                                            final containerOverviewResponse =
+                                                                                snapshot.data!;
+                                                                            return Container(
+                                                                              width: 120.0,
+                                                                              height: 100.0,
+                                                                              decoration: BoxDecoration(
+                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                borderRadius: BorderRadius.circular(8.0),
                                                                               ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                child: Container(
-                                                                                  width: 100.0,
-                                                                                  height: 50.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0x00FFFFFF),
-                                                                                  ),
-                                                                                  child: Column(
-                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                    children: [
-                                                                                      Text(
-                                                                                        '15.354',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                              child: Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                children: [
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                    child: Container(
+                                                                                      width: 100.0,
+                                                                                      height: 30.0,
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: Color(0x00FFFFFF),
                                                                                       ),
-                                                                                      Text(
-                                                                                        '+0.11 %',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Readex Pro',
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
+                                                                                      child: Align(
+                                                                                        alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                        child: Text(
+                                                                                          'USDT/IDR',
+                                                                                          style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                        ),
                                                                                       ),
-                                                                                    ],
+                                                                                    ),
                                                                                   ),
-                                                                                ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                    child: Container(
+                                                                                      width: 100.0,
+                                                                                      height: 50.0,
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: Color(0x00FFFFFF),
+                                                                                      ),
+                                                                                      child: Column(
+                                                                                        mainAxisSize: MainAxisSize.max,
+                                                                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                        children: [
+                                                                                          Text(
+                                                                                            '15.354',
+                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                          ),
+                                                                                          Text(
+                                                                                            '+0.11 %',
+                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                  fontFamily: 'Readex Pro',
+                                                                                                  color: FlutterFlowTheme.of(context).secondary,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ],
+                                                                                      ),
+                                                                                    ),
+                                                                                  ),
+                                                                                ],
                                                                               ),
-                                                                            ],
-                                                                          ),
+                                                                            );
+                                                                          },
                                                                         ),
                                                                       ),
                                                                       Padding(
