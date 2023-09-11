@@ -10,3 +10,7 @@ export '/asdsa/asdsa_widget.dart' show AsdsaWidget;
 export '/menu/showcard/showcard_widget.dart' show ShowcardWidget;
 export '/akun/login/login_widget.dart' show LoginWidget;
 export '/akun/register/register_widget.dart' show RegisterWidget;
+export '/akun/forgot_password/forgot_password_widget.dart'
+    show ForgotPasswordWidget;
+export '/akun/account_settings/account_settings_widget.dart'
+    show AccountSettingsWidget;

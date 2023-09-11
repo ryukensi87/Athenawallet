@@ -106,6 +106,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'register',
               path: 'register',
               builder: (context, params) => RegisterWidget(),
+            ),
+            FFRoute(
+              name: 'ForgotPassword',
+              path: 'forgotPassword',
+              builder: (context, params) => ForgotPasswordWidget(),
+            ),
+            FFRoute(
+              name: 'AccountSettings',
+              path: 'accountSettings',
+              builder: (context, params) => AccountSettingsWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
