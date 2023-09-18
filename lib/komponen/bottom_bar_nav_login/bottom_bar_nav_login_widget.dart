@@ -4,18 +4,19 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'bottom_bar_nav_model.dart';
-export 'bottom_bar_nav_model.dart';
+import 'bottom_bar_nav_login_model.dart';
+export 'bottom_bar_nav_login_model.dart';
 
-class BottomBarNavWidget extends StatefulWidget {
-  const BottomBarNavWidget({Key? key}) : super(key: key);
+class BottomBarNavLoginWidget extends StatefulWidget {
+  const BottomBarNavLoginWidget({Key? key}) : super(key: key);
 
   @override
-  _BottomBarNavWidgetState createState() => _BottomBarNavWidgetState();
+  _BottomBarNavLoginWidgetState createState() =>
+      _BottomBarNavLoginWidgetState();
 }
 
-class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
-  late BottomBarNavModel _model;
+class _BottomBarNavLoginWidgetState extends State<BottomBarNavLoginWidget> {
+  late BottomBarNavLoginModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -26,7 +27,7 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => BottomBarNavModel());
+    _model = createModel(context, () => BottomBarNavLoginModel());
   }
 
   @override
@@ -141,6 +142,41 @@ class _BottomBarNavWidgetState extends State<BottomBarNavWidget> {
                         ),
                         Text(
                           'Swap',
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('LoginRegister');
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Color(0x00FFFFFF),
+                          borderRadius: 0.0,
+                          borderWidth: 0.0,
+                          buttonSize: 40.0,
+                          fillColor: Color(0x00FFFFFF),
+                          icon: Icon(
+                            Icons.wallet,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 24.0,
+                          ),
+                          onPressed: () async {
+                            context.pushNamed('LoginRegister');
+                          },
+                        ),
+                        Text(
+                          'Wallet',
                           style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                       ],

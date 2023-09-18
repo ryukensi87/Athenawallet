@@ -3,7 +3,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/komponen/bottom_bar_nav/bottom_bar_nav_widget.dart';
+import '/komponen/bottom_bar_nav_login/bottom_bar_nav_login_widget.dart';
 import '/komponen/menuview/menuview_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
@@ -12,19 +12,19 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'home_page_pro_model.dart';
-export 'home_page_pro_model.dart';
+import 'home_page_pro_login_model.dart';
+export 'home_page_pro_login_model.dart';
 
-class HomePageProWidget extends StatefulWidget {
-  const HomePageProWidget({Key? key}) : super(key: key);
+class HomePageProLoginWidget extends StatefulWidget {
+  const HomePageProLoginWidget({Key? key}) : super(key: key);
 
   @override
-  _HomePageProWidgetState createState() => _HomePageProWidgetState();
+  _HomePageProLoginWidgetState createState() => _HomePageProLoginWidgetState();
 }
 
-class _HomePageProWidgetState extends State<HomePageProWidget>
+class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
     with TickerProviderStateMixin {
-  late HomePageProModel _model;
+  late HomePageProLoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -47,7 +47,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomePageProModel());
+    _model = createModel(context, () => HomePageProLoginModel());
 
     _model.tabBarController = TabController(
       vsync: this,
@@ -243,7 +243,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                       Colors.transparent,
                                                   onTap: () async {
                                                     context.pushNamed(
-                                                        'AccountSettings');
+                                                        'AccountSettingsLogin');
                                                   },
                                                   child: Icon(
                                                     Icons.account_circle_sharp,
@@ -1965,7 +1965,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -2674,9 +2674,9 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                 children: [
                                   Expanded(
                                     child: wrapWithModel(
-                                      model: _model.bottomBarNavModel,
+                                      model: _model.bottomBarNavLoginModel,
                                       updateCallback: () => setState(() {}),
-                                      child: BottomBarNavWidget(),
+                                      child: BottomBarNavLoginWidget(),
                                     ),
                                   ),
                                 ],
