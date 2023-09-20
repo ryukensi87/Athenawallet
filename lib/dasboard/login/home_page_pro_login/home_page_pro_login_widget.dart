@@ -249,13 +249,27 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                 ),
                                                       ),
                                                     ),
-                                                    Icon(
-                                                      Icons
-                                                          .account_circle_sharp,
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                      size: 35.0,
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        context.pushNamed(
+                                                            'AccountSettingsLogin');
+                                                      },
+                                                      child: Icon(
+                                                        Icons
+                                                            .account_circle_sharp,
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
+                                                        size: 35.0,
+                                                      ),
                                                     ),
                                                   ],
                                                 ),
