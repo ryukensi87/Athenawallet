@@ -53,29 +53,38 @@ class _BottomBarNavLoginWidgetState extends State<BottomBarNavLoginWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      FlutterFlowIconButton(
-                        borderColor: Color(0x00FFFFFF),
-                        borderRadius: 0.0,
-                        borderWidth: 0.0,
-                        buttonSize: 40.0,
-                        fillColor: Color(0x00FFFFFF),
-                        icon: Icon(
-                          Icons.home,
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('HomePageProLogin');
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Color(0x00FFFFFF),
+                          borderRadius: 0.0,
+                          borderWidth: 0.0,
+                          buttonSize: 40.0,
+                          fillColor: Color(0x00FFFFFF),
+                          icon: Icon(
+                            Icons.home,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 24.0,
+                          ),
+                          onPressed: () async {
+                            context.pushNamed('HomePageProLogin');
+                          },
                         ),
-                        onPressed: () async {
-                          context.pushNamed('HomePagePro');
-                        },
-                      ),
-                      Text(
-                        'Home',
-                        style: FlutterFlowTheme.of(context).bodyMedium,
-                      ),
-                    ],
+                        Text(
+                          'Home',
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -155,7 +164,7 @@ class _BottomBarNavLoginWidgetState extends State<BottomBarNavLoginWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed('LoginRegister');
+                      context.pushNamed('Wallet');
                     },
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -172,7 +181,7 @@ class _BottomBarNavLoginWidgetState extends State<BottomBarNavLoginWidget> {
                             size: 24.0,
                           ),
                           onPressed: () async {
-                            context.pushNamed('LoginRegister');
+                            context.pushNamed('Wallet');
                           },
                         ),
                         Text(

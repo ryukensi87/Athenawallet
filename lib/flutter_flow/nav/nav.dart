@@ -131,6 +131,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'HomePageProLogin',
               path: 'homePageProLogin',
               builder: (context, params) => HomePageProLoginWidget(),
+            ),
+            FFRoute(
+              name: 'Wallet',
+              path: 'wallet',
+              builder: (context, params) => WalletWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

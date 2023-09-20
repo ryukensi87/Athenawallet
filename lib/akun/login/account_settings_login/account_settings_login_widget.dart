@@ -124,12 +124,36 @@ class _AccountSettingsLoginWidgetState
                                   0.0, 0.0, 10.0, 0.0),
                               child: Text(
                                 'WELCOME,',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Readex Pro',
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                               ),
                             ),
-                            Text(
-                              currentUserEmail,
-                              style: FlutterFlowTheme.of(context).bodyMedium,
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                AuthUserStreamWidget(
+                                  builder: (context) => Text(
+                                    currentUserDisplayName,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                  ),
+                                ),
+                                Text(
+                                  currentUserEmail,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                              ],
                             ),
                           ],
                         ),

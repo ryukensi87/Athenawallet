@@ -1,4 +1,3 @@
-import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -230,7 +229,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  size: 30.0,
+                                                  size: 25.0,
                                                 ),
                                                 InkWell(
                                                   splashColor:
@@ -737,90 +736,75 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                             0.0,
                                                                             5.0,
                                                                             0.0),
-                                                                        child: FutureBuilder<
-                                                                            ApiCallResponse>(
-                                                                          future: LiveCoinWatchGroup
-                                                                              .overviewCall
-                                                                              .call(),
-                                                                          builder:
-                                                                              (context, snapshot) {
-                                                                            // Customize what your widget looks like when it's loading.
-                                                                            if (!snapshot.hasData) {
-                                                                              return Center(
-                                                                                child: SizedBox(
-                                                                                  width: 50.0,
-                                                                                  height: 50.0,
-                                                                                  child: CircularProgressIndicator(
-                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                        child:
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'USDT/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ),
-                                                                              );
-                                                                            }
-                                                                            final containerOverviewResponse =
-                                                                                snapshot.data!;
-                                                                            return Container(
-                                                                              width: 120.0,
-                                                                              height: 100.0,
-                                                                              decoration: BoxDecoration(
-                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                borderRadius: BorderRadius.circular(8.0),
                                                                               ),
-                                                                              child: Column(
-                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                mainAxisAlignment: MainAxisAlignment.center,
-                                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                children: [
-                                                                                  Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                    child: Container(
-                                                                                      width: 100.0,
-                                                                                      height: 30.0,
-                                                                                      decoration: BoxDecoration(
-                                                                                        color: Color(0x00FFFFFF),
-                                                                                      ),
-                                                                                      child: Align(
-                                                                                        alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                        child: Text(
-                                                                                          'USDT/IDR',
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                        ),
-                                                                                      ),
-                                                                                    ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
                                                                                   ),
-                                                                                  Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                    child: Container(
-                                                                                      width: 100.0,
-                                                                                      height: 50.0,
-                                                                                      decoration: BoxDecoration(
-                                                                                        color: Color(0x00FFFFFF),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '15.354',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                       ),
-                                                                                      child: Column(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            '15.354',
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                          ),
-                                                                                          Text(
-                                                                                            '+0.11 %',
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).secondary,
-                                                                                                ),
-                                                                                          ),
-                                                                                        ],
+                                                                                      Text(
+                                                                                        '+0.11 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
                                                                                       ),
-                                                                                    ),
+                                                                                    ],
                                                                                   ),
-                                                                                ],
+                                                                                ),
                                                                               ),
-                                                                            );
-                                                                          },
+                                                                            ],
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                       Padding(
@@ -1137,7 +1121,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -1551,7 +1535,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -2379,7 +2363,7 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -2669,23 +2653,23 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                   ],
                                 ),
                               ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: wrapWithModel(
-                                      model: _model.bottomBarNavModel,
-                                      updateCallback: () => setState(() {}),
-                                      child: BottomBarNavWidget(),
-                                    ),
-                                  ),
-                                ],
-                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Expanded(
+                        child: wrapWithModel(
+                          model: _model.bottomBarNavModel,
+                          updateCallback: () => setState(() {}),
+                          child: BottomBarNavWidget(),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

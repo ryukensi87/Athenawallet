@@ -441,6 +441,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium,
+                                                      maxLength: 8,
                                                       validator: _model
                                                           .passwordController1Validator
                                                           .asValidator(context),
@@ -557,7 +558,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                         }
 
                                                         context.pushNamedAuth(
-                                                            'AccountSettingsLogin',
+                                                            'HomePageProLogin',
                                                             context.mounted);
                                                       },
                                                       text: 'Log in',
@@ -665,33 +666,20 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                 children: [
                                                   Container(
                                                     width: double.infinity,
-                                                    height: 50.0,
                                                     decoration: BoxDecoration(
                                                       color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
-                                                      boxShadow: [
-                                                        BoxShadow(
-                                                          blurRadius: 4.0,
-                                                          color:
-                                                              Color(0x33000000),
-                                                          offset:
-                                                              Offset(0.0, 2.0),
-                                                        )
-                                                      ],
                                                       borderRadius:
                                                           BorderRadius.circular(
-                                                              30.0),
-                                                      border: Border.all(
-                                                        width: 0.1,
-                                                      ),
+                                                              0.0),
                                                     ),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   15.0,
-                                                                  0.0,
+                                                                  10.0,
                                                                   15.0,
                                                                   0.0),
                                                       child: TextFormField(
@@ -711,7 +699,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       context)
                                                                   .labelMedium,
                                                           enabledBorder:
-                                                              UnderlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderSide:
                                                                 BorderSide(
                                                               color: FlutterFlowTheme
@@ -725,7 +713,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         8.0),
                                                           ),
                                                           focusedBorder:
-                                                              UnderlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderSide:
                                                                 BorderSide(
                                                               color: FlutterFlowTheme
@@ -739,7 +727,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         8.0),
                                                           ),
                                                           errorBorder:
-                                                              UnderlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderSide:
                                                                 BorderSide(
                                                               color: FlutterFlowTheme
@@ -753,7 +741,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         8.0),
                                                           ),
                                                           focusedErrorBorder:
-                                                              UnderlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderSide:
                                                                 BorderSide(
                                                               color: FlutterFlowTheme
@@ -766,6 +754,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .circular(
                                                                         8.0),
                                                           ),
+                                                          filled: true,
                                                           prefixIcon: Icon(
                                                             Icons.person_2,
                                                             size: 25.0,
@@ -791,26 +780,13 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                 0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
-                                                      height: 50.0,
                                                       decoration: BoxDecoration(
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
-                                                          BoxShadow(
-                                                            blurRadius: 4.0,
-                                                            color: Color(
-                                                                0x33000000),
-                                                            offset: Offset(
-                                                                0.0, 2.0),
-                                                          )
-                                                        ],
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(30.0),
-                                                        border: Border.all(
-                                                          width: 0.1,
-                                                        ),
+                                                                .circular(0.0),
                                                       ),
                                                       child: Padding(
                                                         padding:
@@ -837,7 +813,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         context)
                                                                     .labelMedium,
                                                             enabledBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -851,7 +827,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -865,7 +841,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             errorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -879,7 +855,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedErrorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -892,6 +868,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       .circular(
                                                                           8.0),
                                                             ),
+                                                            filled: true,
                                                             prefixIcon: Icon(
                                                               Icons.email,
                                                               size: 25.0,
@@ -918,26 +895,13 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                 0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
-                                                      height: 50.0,
                                                       decoration: BoxDecoration(
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
-                                                          BoxShadow(
-                                                            blurRadius: 4.0,
-                                                            color: Color(
-                                                                0x33000000),
-                                                            offset: Offset(
-                                                                0.0, 2.0),
-                                                          )
-                                                        ],
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(30.0),
-                                                        border: Border.all(
-                                                          width: 0.1,
-                                                        ),
+                                                                .circular(0.0),
                                                       ),
                                                       child: Padding(
                                                         padding:
@@ -965,7 +929,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         context)
                                                                     .labelMedium,
                                                             enabledBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -979,7 +943,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -993,7 +957,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             errorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1007,7 +971,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedErrorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1020,6 +984,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       .circular(
                                                                           8.0),
                                                             ),
+                                                            filled: true,
                                                             prefixIcon: Icon(
                                                               Icons
                                                                   .phone_iphone_outlined,
@@ -1047,26 +1012,13 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                 0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
-                                                      height: 50.0,
                                                       decoration: BoxDecoration(
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
-                                                          BoxShadow(
-                                                            blurRadius: 4.0,
-                                                            color: Color(
-                                                                0x33000000),
-                                                            offset: Offset(
-                                                                0.0, 2.0),
-                                                          )
-                                                        ],
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(30.0),
-                                                        border: Border.all(
-                                                          width: 0.1,
-                                                        ),
+                                                                .circular(0.0),
                                                       ),
                                                       child: Padding(
                                                         padding:
@@ -1098,7 +1050,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         context)
                                                                     .labelMedium,
                                                             enabledBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1112,7 +1064,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1126,7 +1078,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             errorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1140,7 +1092,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedErrorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1153,6 +1105,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       .circular(
                                                                           8.0),
                                                             ),
+                                                            filled: true,
                                                             prefixIcon: Icon(
                                                               Icons
                                                                   .lock_rounded,
@@ -1209,26 +1162,13 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                 0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
-                                                      height: 50.0,
                                                       decoration: BoxDecoration(
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
-                                                          BoxShadow(
-                                                            blurRadius: 4.0,
-                                                            color: Color(
-                                                                0x33000000),
-                                                            offset: Offset(
-                                                                0.0, 2.0),
-                                                          )
-                                                        ],
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(30.0),
-                                                        border: Border.all(
-                                                          width: 0.1,
-                                                        ),
+                                                                .circular(0.0),
                                                       ),
                                                       child: Padding(
                                                         padding:
@@ -1259,7 +1199,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         context)
                                                                     .labelMedium,
                                                             enabledBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1273,7 +1213,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1287,7 +1227,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             errorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1301,7 +1241,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           8.0),
                                                             ),
                                                             focusedErrorBorder:
-                                                                UnderlineInputBorder(
+                                                                OutlineInputBorder(
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: FlutterFlowTheme.of(
@@ -1314,6 +1254,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       .circular(
                                                                           8.0),
                                                             ),
+                                                            filled: true,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)

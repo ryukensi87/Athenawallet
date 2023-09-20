@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -9,9 +10,9 @@ class ForgotPasswordModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for TextField widget.
-  TextEditingController? textController;
-  String? Function(BuildContext, String?)? textControllerValidator;
+  // State field(s) for Email widget.
+  TextEditingController? emailController;
+  String? Function(BuildContext, String?)? emailControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -19,7 +20,7 @@ class ForgotPasswordModel extends FlutterFlowModel {
 
   void dispose() {
     unfocusNode.dispose();
-    textController?.dispose();
+    emailController?.dispose();
   }
 
   /// Action blocks are added here.

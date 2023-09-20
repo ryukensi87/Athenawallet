@@ -10,7 +10,8 @@ export '/akun/account_settings/account_settings_widget.dart'
     show AccountSettingsWidget;
 export '/akun/login_register/login_register_widget.dart'
     show LoginRegisterWidget;
-export '/akun/account_settings_login/account_settings_login_widget.dart'
+export '/akun/login/account_settings_login/account_settings_login_widget.dart'
     show AccountSettingsLoginWidget;
 export '/dasboard/login/home_page_pro_login/home_page_pro_login_widget.dart'
     show HomePageProLoginWidget;
+export '/menu/wallet/wallet_widget.dart' show WalletWidget;

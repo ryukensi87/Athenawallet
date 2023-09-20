@@ -1,4 +1,4 @@
-import '/backend/api_requests/api_calls.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -214,46 +214,52 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                               ),
                                             ),
                                           ),
-                                          Container(
-                                            width: 100.0,
-                                            height: 100.0,
-                                            decoration: BoxDecoration(
-                                              color: Color(0x00FFFFFF),
-                                            ),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceEvenly,
-                                              children: [
-                                                Icon(
-                                                  Icons.search,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  size: 30.0,
+                                          Expanded(
+                                            child: Container(
+                                              width: 100.0,
+                                              height: 100.0,
+                                              decoration: BoxDecoration(
+                                                color: Color(0x00FFFFFF),
+                                              ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 15.0, 0.0),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceEvenly,
+                                                  children: [
+                                                    AuthUserStreamWidget(
+                                                      builder: (context) =>
+                                                          Text(
+                                                        currentUserDisplayName,
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
+                                                      ),
+                                                    ),
+                                                    Icon(
+                                                      Icons
+                                                          .account_circle_sharp,
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      size: 35.0,
+                                                    ),
+                                                  ],
                                                 ),
-                                                InkWell(
-                                                  splashColor:
-                                                      Colors.transparent,
-                                                  focusColor:
-                                                      Colors.transparent,
-                                                  hoverColor:
-                                                      Colors.transparent,
-                                                  highlightColor:
-                                                      Colors.transparent,
-                                                  onTap: () async {
-                                                    context.pushNamed(
-                                                        'AccountSettingsLogin');
-                                                  },
-                                                  child: Icon(
-                                                    Icons.account_circle_sharp,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 35.0,
-                                                  ),
-                                                ),
-                                              ],
+                                              ),
                                             ),
                                           ),
                                         ],
@@ -737,90 +743,75 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                             0.0,
                                                                             5.0,
                                                                             0.0),
-                                                                        child: FutureBuilder<
-                                                                            ApiCallResponse>(
-                                                                          future: LiveCoinWatchGroup
-                                                                              .overviewCall
-                                                                              .call(),
-                                                                          builder:
-                                                                              (context, snapshot) {
-                                                                            // Customize what your widget looks like when it's loading.
-                                                                            if (!snapshot.hasData) {
-                                                                              return Center(
-                                                                                child: SizedBox(
-                                                                                  width: 50.0,
-                                                                                  height: 50.0,
-                                                                                  child: CircularProgressIndicator(
-                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                        child:
+                                                                            Container(
+                                                                          width:
+                                                                              120.0,
+                                                                          height:
+                                                                              100.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.center,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 30.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
+                                                                                  ),
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.00, 0.00),
+                                                                                    child: Text(
+                                                                                      'USDT/IDR',
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ),
-                                                                              );
-                                                                            }
-                                                                            final containerOverviewResponse =
-                                                                                snapshot.data!;
-                                                                            return Container(
-                                                                              width: 120.0,
-                                                                              height: 100.0,
-                                                                              decoration: BoxDecoration(
-                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                borderRadius: BorderRadius.circular(8.0),
                                                                               ),
-                                                                              child: Column(
-                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                mainAxisAlignment: MainAxisAlignment.center,
-                                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                children: [
-                                                                                  Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                    child: Container(
-                                                                                      width: 100.0,
-                                                                                      height: 30.0,
-                                                                                      decoration: BoxDecoration(
-                                                                                        color: Color(0x00FFFFFF),
-                                                                                      ),
-                                                                                      child: Align(
-                                                                                        alignment: AlignmentDirectional(-1.00, 0.00),
-                                                                                        child: Text(
-                                                                                          'USDT/IDR',
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                        ),
-                                                                                      ),
-                                                                                    ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                child: Container(
+                                                                                  width: 100.0,
+                                                                                  height: 50.0,
+                                                                                  decoration: BoxDecoration(
+                                                                                    color: Color(0x00FFFFFF),
                                                                                   ),
-                                                                                  Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
-                                                                                    child: Container(
-                                                                                      width: 100.0,
-                                                                                      height: 50.0,
-                                                                                      decoration: BoxDecoration(
-                                                                                        color: Color(0x00FFFFFF),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        '15.354',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                       ),
-                                                                                      child: Column(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                        children: [
-                                                                                          Text(
-                                                                                            '15.354',
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
-                                                                                          ),
-                                                                                          Text(
-                                                                                            '+0.11 %',
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Readex Pro',
-                                                                                                  color: FlutterFlowTheme.of(context).secondary,
-                                                                                                ),
-                                                                                          ),
-                                                                                        ],
+                                                                                      Text(
+                                                                                        '+0.11 %',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Readex Pro',
+                                                                                              color: FlutterFlowTheme.of(context).secondary,
+                                                                                            ),
                                                                                       ),
-                                                                                    ),
+                                                                                    ],
                                                                                   ),
-                                                                                ],
+                                                                                ),
                                                                               ),
-                                                                            );
-                                                                          },
+                                                                            ],
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                       Padding(
@@ -1137,7 +1128,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -1551,7 +1542,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -1965,7 +1956,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -2379,7 +2370,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 10.0),
                                                                                         child: SingleChildScrollView(
                                                                                           scrollDirection: Axis.horizontal,
                                                                                           child: Row(
@@ -2669,23 +2660,23 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                   ],
                                 ),
                               ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: wrapWithModel(
-                                      model: _model.bottomBarNavLoginModel,
-                                      updateCallback: () => setState(() {}),
-                                      child: BottomBarNavLoginWidget(),
-                                    ),
-                                  ),
-                                ],
-                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Expanded(
+                        child: wrapWithModel(
+                          model: _model.bottomBarNavLoginModel,
+                          updateCallback: () => setState(() {}),
+                          child: BottomBarNavLoginWidget(),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
