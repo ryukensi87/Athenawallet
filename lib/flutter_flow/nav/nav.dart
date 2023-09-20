@@ -136,6 +136,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Wallet',
               path: 'wallet',
               builder: (context, params) => WalletWidget(),
+            ),
+            FFRoute(
+              name: 'Profil_Picture',
+              path: 'profilPicture',
+              builder: (context, params) => ProfilPictureWidget(
+                userDocument: params.getParam('userDocument', ParamType.String),
+              ),
+            ),
+            FFRoute(
+              name: 'PersonalSettings',
+              path: 'personalSettings',
+              builder: (context, params) => PersonalSettingsWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

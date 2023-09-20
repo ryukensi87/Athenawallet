@@ -1,10 +1,10 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/coumpunent/bottom_bar_nav_login/bottom_bar_nav_login_widget.dart';
+import '/coumpunent/menuview/menuview_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/komponen/bottom_bar_nav_login/bottom_bar_nav_login_widget.dart';
-import '/komponen/menuview/menuview_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
@@ -2674,23 +2674,23 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                   ],
                                 ),
                               ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Expanded(
+                                    child: wrapWithModel(
+                                      model: _model.bottomBarNavLoginModel,
+                                      updateCallback: () => setState(() {}),
+                                      child: BottomBarNavLoginWidget(),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
-                  ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: wrapWithModel(
-                          model: _model.bottomBarNavLoginModel,
-                          updateCallback: () => setState(() {}),
-                          child: BottomBarNavLoginWidget(),
-                        ),
-                      ),
-                    ],
                   ),
                 ],
               ),

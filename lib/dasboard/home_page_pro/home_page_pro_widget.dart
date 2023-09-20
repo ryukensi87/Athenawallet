@@ -1,9 +1,9 @@
+import '/coumpunent/bottom_bar_nav/bottom_bar_nav_widget.dart';
+import '/coumpunent/menuview/menuview_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/komponen/bottom_bar_nav/bottom_bar_nav_widget.dart';
-import '/komponen/menuview/menuview_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
@@ -2653,23 +2653,23 @@ class _HomePageProWidgetState extends State<HomePageProWidget>
                                   ],
                                 ),
                               ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Expanded(
+                                    child: wrapWithModel(
+                                      model: _model.bottomBarNavModel,
+                                      updateCallback: () => setState(() {}),
+                                      child: BottomBarNavWidget(),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ],
                       ),
                     ),
-                  ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: wrapWithModel(
-                          model: _model.bottomBarNavModel,
-                          updateCallback: () => setState(() {}),
-                          child: BottomBarNavWidget(),
-                        ),
-                      ),
-                    ],
                   ),
                 ],
               ),
