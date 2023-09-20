@@ -1,5 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -128,69 +126,40 @@ class _ProfilPictureWidgetState extends State<ProfilPictureWidget> {
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 50.0, 0.0, 0.0),
-                          child: AuthUserStreamWidget(
-                            builder: (context) =>
-                                StreamBuilder<List<UsersRecord>>(
-                              stream: queryUsersRecord(
-                                queryBuilder: (usersRecord) =>
-                                    usersRecord.orderBy('photo_url'),
-                              ),
-                              builder: (context, snapshot) {
-                                // Customize what your widget looks like when it's loading.
-                                if (!snapshot.hasData) {
-                                  return Center(
-                                    child: SizedBox(
-                                      width: 50.0,
-                                      height: 50.0,
-                                      child: CircularProgressIndicator(
-                                        valueColor:
-                                            AlwaysStoppedAnimation<Color>(
-                                          FlutterFlowTheme.of(context).primary,
-                                        ),
-                                      ),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              await Navigator.push(
+                                context,
+                                PageTransition(
+                                  type: PageTransitionType.fade,
+                                  child: FlutterFlowExpandedImageView(
+                                    image: Image.network(
+                                      widget.userDocument!,
+                                      fit: BoxFit.contain,
                                     ),
-                                  );
-                                }
-                                List<UsersRecord>
-                                    profilPicturechangeUsersRecordList =
-                                    snapshot.data!;
-                                return InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      PageTransition(
-                                        type: PageTransitionType.fade,
-                                        child: FlutterFlowExpandedImageView(
-                                          image: Image.network(
-                                            currentUserPhoto,
-                                            fit: BoxFit.contain,
-                                          ),
-                                          allowRotation: true,
-                                          tag: currentUserPhoto,
-                                          useHeroAnimation: true,
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                  child: Hero(
-                                    tag: currentUserPhoto,
-                                    transitionOnUserGestures: true,
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8.0),
-                                      child: Image.network(
-                                        currentUserPhoto,
-                                        width: double.infinity,
-                                        height: 350.0,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
+                                    allowRotation: true,
+                                    tag: widget.userDocument!,
+                                    useHeroAnimation: true,
                                   ),
-                                );
-                              },
+                                ),
+                              );
+                            },
+                            child: Hero(
+                              tag: widget.userDocument!,
+                              transitionOnUserGestures: true,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(8.0),
+                                child: Image.network(
+                                  widget.userDocument!,
+                                  width: double.infinity,
+                                  height: 350.0,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                           ),
                         ),

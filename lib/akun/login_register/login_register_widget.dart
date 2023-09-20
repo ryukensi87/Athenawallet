@@ -1295,11 +1295,11 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                           return;
                                                         }
 
-                                                        await UsersRecord
+                                                        await UserAkunRecord
                                                             .collection
                                                             .doc(user.uid)
                                                             .update(
-                                                                createUsersRecordData(
+                                                                createUserAkunRecordData(
                                                               email: _model
                                                                   .usernameController2
                                                                   .text,
