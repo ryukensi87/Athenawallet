@@ -142,6 +142,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'profilPicture',
               builder: (context, params) => ProfilPictureWidget(
                 userDocument: params.getParam('userDocument', ParamType.String),
+                profil: params.getParam('profil', ParamType.String),
               ),
             ),
             FFRoute(

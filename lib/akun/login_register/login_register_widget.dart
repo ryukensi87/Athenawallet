@@ -1300,11 +1300,11 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                             .doc(user.uid)
                                                             .update(
                                                                 createUserAkunRecordData(
-                                                              email: _model
-                                                                  .usernameController2
-                                                                  .text,
                                                               displayName: _model
                                                                   .usernameController1
+                                                                  .text,
+                                                              email: _model
+                                                                  .usernameController2
                                                                   .text,
                                                               phoneNumber: _model
                                                                   .noTlpnController
