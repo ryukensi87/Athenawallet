@@ -278,7 +278,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
-                                                                      5.0,
+                                                                      0.0,
                                                                       5.0),
                                                           child: Text(
                                                             rowUserAkunRecord!
@@ -302,7 +302,7 @@ class _HomePageProLoginWidgetState extends State<HomePageProLoginWidget>
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      5.0,
+                                                                      0.0,
                                                                       0.0,
                                                                       0.0,
                                                                       10.0),

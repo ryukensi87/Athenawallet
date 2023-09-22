@@ -431,7 +431,7 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                   onPressed: () async {
                                     context.pushNamed('Profil_Picture');
                                   },
-                                  text: 'Edit',
+                                  text: 'Edit Foto',
                                   options: FFButtonOptions(
                                     width: 300.0,
                                     height: 55.0,
@@ -445,7 +445,7 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: FlutterFlowTheme.of(context)
-                                              .tertiary,
+                                              .secondaryBackground,
                                         ),
                                     elevation: 4.0,
                                     borderSide: BorderSide(
