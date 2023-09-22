@@ -13,14 +13,7 @@ import 'profil_picture_model.dart';
 export 'profil_picture_model.dart';
 
 class ProfilPictureWidget extends StatefulWidget {
-  const ProfilPictureWidget({
-    Key? key,
-    required this.userDocument,
-    required this.profil,
-  }) : super(key: key);
-
-  final String? userDocument;
-  final String? profil;
+  const ProfilPictureWidget({Key? key}) : super(key: key);
 
   @override
   _ProfilPictureWidgetState createState() => _ProfilPictureWidgetState();
@@ -170,6 +163,14 @@ class _ProfilPictureWidgetState extends State<ProfilPictureWidget> {
                                         width: 250.0,
                                         height: 250.0,
                                         fit: BoxFit.cover,
+                                        errorBuilder:
+                                            (context, error, stackTrace) =>
+                                                Image.asset(
+                                          'assets/images/error_image.png',
+                                          width: 250.0,
+                                          height: 250.0,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                     Padding(
@@ -325,8 +326,7 @@ class _ProfilPictureWidgetState extends State<ProfilPictureWidget> {
                                         );
                                       },
                                     );
-
-                                    context.pushNamed('AccountSettingsLogin');
+                                    context.safePop();
                                   },
                                   text: 'Change Profil Picture',
                                   options: FFButtonOptions(

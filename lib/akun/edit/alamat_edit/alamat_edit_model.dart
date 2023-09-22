@@ -1,15 +1,20 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class WelcomePageModel extends FlutterFlowModel {
+class AlamatEditModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  // State field(s) for alamat widget.
+  TextEditingController? alamatController;
+  String? Function(BuildContext, String?)? alamatControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -17,6 +22,7 @@ class WelcomePageModel extends FlutterFlowModel {
 
   void dispose() {
     unfocusNode.dispose();
+    alamatController?.dispose();
   }
 
   /// Action blocks are added here.

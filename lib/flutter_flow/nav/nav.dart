@@ -140,15 +140,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'Profil_Picture',
               path: 'profilPicture',
-              builder: (context, params) => ProfilPictureWidget(
-                userDocument: params.getParam('userDocument', ParamType.String),
-                profil: params.getParam('profil', ParamType.String),
-              ),
+              builder: (context, params) => ProfilPictureWidget(),
             ),
             FFRoute(
               name: 'PersonalSettings',
               path: 'personalSettings',
               builder: (context, params) => PersonalSettingsWidget(),
+            ),
+            FFRoute(
+              name: 'EmailEdit',
+              path: 'emailEdit',
+              builder: (context, params) => EmailEditWidget(),
+            ),
+            FFRoute(
+              name: 'PhoneEdit',
+              path: 'phoneEdit',
+              builder: (context, params) => PhoneEditWidget(),
+            ),
+            FFRoute(
+              name: 'AlamatEdit',
+              path: 'alamatEdit',
+              builder: (context, params) => AlamatEditWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

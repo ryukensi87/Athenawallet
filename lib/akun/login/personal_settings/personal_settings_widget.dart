@@ -154,14 +154,24 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                 children: [
                                   Stack(
                                     children: [
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(80.0),
-                                        child: Image.network(
-                                          rowUserAkunRecord!.photoUrl,
-                                          width: 150.0,
-                                          height: 150.0,
-                                          fit: BoxFit.cover,
+                                      AuthUserStreamWidget(
+                                        builder: (context) => ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(80.0),
+                                          child: Image.network(
+                                            currentUserPhoto,
+                                            width: 150.0,
+                                            height: 150.0,
+                                            fit: BoxFit.cover,
+                                            errorBuilder:
+                                                (context, error, stackTrace) =>
+                                                    Image.asset(
+                                              'assets/images/error_image.png',
+                                              width: 150.0,
+                                              height: 150.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -266,11 +276,29 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                 currentUserEmail,
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
-                              Icon(
-                                Icons.edit,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 20.0,
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed(
+                                    'EmailEdit',
+                                    extra: <String, dynamic>{
+                                      kTransitionInfoKey: TransitionInfo(
+                                        hasTransition: true,
+                                        transitionType: PageTransitionType.fade,
+                                        duration: Duration(milliseconds: 0),
+                                      ),
+                                    },
+                                  );
+                                },
+                                child: Icon(
+                                  Icons.edit,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 20.0,
+                                ),
                               ),
                             ],
                           ),
@@ -299,11 +327,20 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                       FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                               ),
-                              Icon(
-                                Icons.edit,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 20.0,
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed('PhoneEdit');
+                                },
+                                child: Icon(
+                                  Icons.edit,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 20.0,
+                                ),
                               ),
                             ],
                           ),
@@ -325,18 +362,28 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                valueOrDefault<String>(
-                                  currentJwtToken,
-                                  '1',
+                              AuthUserStreamWidget(
+                                builder: (context) => Text(
+                                  valueOrDefault(
+                                      currentUserDocument?.address, ''),
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
-                              Icon(
-                                Icons.edit,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 20.0,
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed('AlamatEdit');
+                                },
+                                child: Icon(
+                                  Icons.edit,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 20.0,
+                                ),
                               ),
                             ],
                           ),
@@ -370,6 +417,44 @@ class _PersonalSettingsWidgetState extends State<PersonalSettingsWidget> {
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 size: 20.0,
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 20.0, 0.0, 0.0),
+                                child: FFButtonWidget(
+                                  onPressed: () async {
+                                    context.pushNamed('Profil_Picture');
+                                  },
+                                  text: 'Edit',
+                                  options: FFButtonOptions(
+                                    width: 300.0,
+                                    height: 55.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          color: FlutterFlowTheme.of(context)
+                                              .tertiary,
+                                        ),
+                                    elevation: 4.0,
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 2.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(30.0),
+                                  ),
+                                ),
                               ),
                             ],
                           ),

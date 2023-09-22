@@ -159,34 +159,23 @@ class _AccountSettingsLoginWidgetState
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 15.0, 0.0),
-                                      child: InkWell(
-                                        splashColor: Colors.transparent,
-                                        focusColor: Colors.transparent,
-                                        hoverColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        onTap: () async {
-                                          context.pushNamed(
-                                            'Profil_Picture',
-                                            queryParameters: {
-                                              'userDocument': serializeParam(
-                                                currentUserPhoto,
-                                                ParamType.String,
-                                              ),
-                                              'profil': serializeParam(
-                                                rowUserAkunRecord?.photoUrl,
-                                                ParamType.String,
-                                              ),
-                                            }.withoutNulls,
-                                          );
-                                        },
-                                        child: ClipRRect(
+                                      child: AuthUserStreamWidget(
+                                        builder: (context) => ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(15.0),
                                           child: Image.network(
-                                            rowUserAkunRecord!.photoUrl,
+                                            currentUserPhoto,
                                             width: 100.0,
                                             height: 100.0,
                                             fit: BoxFit.cover,
+                                            errorBuilder:
+                                                (context, error, stackTrace) =>
+                                                    Image.asset(
+                                              'assets/images/error_image.png',
+                                              width: 100.0,
+                                              height: 100.0,
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
