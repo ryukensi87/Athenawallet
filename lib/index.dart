@@ -22,3 +22,5 @@ export '/akun/login/personal_settings/personal_settings_widget.dart'
 export '/akun/edit/email_edit/email_edit_widget.dart' show EmailEditWidget;
 export '/akun/edit/phone_edit/phone_edit_widget.dart' show PhoneEditWidget;
 export '/akun/edit/alamat_edit/alamat_edit_widget.dart' show AlamatEditWidget;
+export '/akun/edit/emergency_edit/emergency_edit_widget.dart'
+    show EmergencyEditWidget;

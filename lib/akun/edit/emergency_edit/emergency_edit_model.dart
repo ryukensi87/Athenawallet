@@ -3,21 +3,21 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'phone_edit_widget.dart' show PhoneEditWidget;
+import 'emergency_edit_widget.dart' show EmergencyEditWidget;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class PhoneEditModel extends FlutterFlowModel<PhoneEditWidget> {
+class EmergencyEditModel extends FlutterFlowModel<EmergencyEditWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for Notlp widget.
-  FocusNode? notlpFocusNode;
-  TextEditingController? notlpController;
-  String? Function(BuildContext, String?)? notlpControllerValidator;
+  // State field(s) for Notlpemergency widget.
+  FocusNode? notlpemergencyFocusNode;
+  TextEditingController? notlpemergencyController;
+  String? Function(BuildContext, String?)? notlpemergencyControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -25,8 +25,8 @@ class PhoneEditModel extends FlutterFlowModel<PhoneEditWidget> {
 
   void dispose() {
     unfocusNode.dispose();
-    notlpFocusNode?.dispose();
-    notlpController?.dispose();
+    notlpemergencyFocusNode?.dispose();
+    notlpemergencyController?.dispose();
   }
 
   /// Action blocks are added here.

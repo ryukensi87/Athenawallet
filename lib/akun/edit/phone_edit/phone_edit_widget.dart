@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'phone_edit_model.dart';
@@ -28,6 +29,7 @@ class _PhoneEditWidgetState extends State<PhoneEditWidget> {
     _model = createModel(context, () => PhoneEditModel());
 
     _model.notlpController ??= TextEditingController();
+    _model.notlpFocusNode ??= FocusNode();
   }
 
   @override
@@ -39,8 +41,19 @@ class _PhoneEditWidgetState extends State<PhoneEditWidget> {
 
   @override
   Widget build(BuildContext context) {
+    if (isiOS) {
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(
+          statusBarBrightness: Theme.of(context).brightness,
+          systemStatusBarContrastEnforced: true,
+        ),
+      );
+    }
+
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -174,6 +187,7 @@ class _PhoneEditWidgetState extends State<PhoneEditWidget> {
                                 8.0, 10.0, 8.0, 0.0),
                             child: TextFormField(
                               controller: _model.notlpController,
+                              focusNode: _model.notlpFocusNode,
                               autofocus: true,
                               obscureText: false,
                               decoration: InputDecoration(
@@ -226,6 +240,22 @@ class _PhoneEditWidgetState extends State<PhoneEditWidget> {
                                     .update(createUserAkunRecordData(
                                   phoneNumber: _model.notlpController.text,
                                 ));
+                                await showDialog(
+                                  context: context,
+                                  builder: (alertDialogContext) {
+                                    return AlertDialog(
+                                      content:
+                                          Text('Nomor Tlpn Berhasil Diubah'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () =>
+                                              Navigator.pop(alertDialogContext),
+                                          child: Text('Ok'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
                                 context.safePop();
                               },
                               text: 'Update',

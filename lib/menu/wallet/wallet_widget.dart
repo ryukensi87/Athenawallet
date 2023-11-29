@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'wallet_model.dart';
@@ -36,6 +37,7 @@ class _WalletWidgetState extends State<WalletWidget>
       initialIndex: 0,
     )..addListener(() => setState(() {}));
     _model.casetController ??= TextEditingController();
+    _model.casetFocusNode ??= FocusNode();
   }
 
   @override
@@ -47,8 +49,19 @@ class _WalletWidgetState extends State<WalletWidget>
 
   @override
   Widget build(BuildContext context) {
+    if (isiOS) {
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(
+          statusBarBrightness: Theme.of(context).brightness,
+          systemStatusBarContrastEnforced: true,
+        ),
+      );
+    }
+
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -830,6 +843,7 @@ class _WalletWidgetState extends State<WalletWidget>
                                             child: TextFormField(
                                               controller:
                                                   _model.casetController,
+                                              focusNode: _model.casetFocusNode,
                                               autofocus: true,
                                               obscureText: false,
                                               decoration: InputDecoration(

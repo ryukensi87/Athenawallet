@@ -8,28 +8,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'alamat_edit_model.dart';
-export 'alamat_edit_model.dart';
+import 'emergency_edit_model.dart';
+export 'emergency_edit_model.dart';
 
-class AlamatEditWidget extends StatefulWidget {
-  const AlamatEditWidget({Key? key}) : super(key: key);
+class EmergencyEditWidget extends StatefulWidget {
+  const EmergencyEditWidget({Key? key}) : super(key: key);
 
   @override
-  _AlamatEditWidgetState createState() => _AlamatEditWidgetState();
+  _EmergencyEditWidgetState createState() => _EmergencyEditWidgetState();
 }
 
-class _AlamatEditWidgetState extends State<AlamatEditWidget> {
-  late AlamatEditModel _model;
+class _EmergencyEditWidgetState extends State<EmergencyEditWidget> {
+  late EmergencyEditModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => AlamatEditModel());
+    _model = createModel(context, () => EmergencyEditModel());
 
-    _model.alamatController ??= TextEditingController();
-    _model.alamatFocusNode ??= FocusNode();
+    _model.notlpemergencyController ??= TextEditingController();
+    _model.notlpemergencyFocusNode ??= FocusNode();
   }
 
   @override
@@ -160,12 +160,13 @@ class _AlamatEditWidgetState extends State<AlamatEditWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Perubahan Alamat',
+                            'Perubahan No Tlpn Emergency',
+                            textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  fontSize: 25.0,
+                                  fontSize: 20.0,
                                   fontWeight: FontWeight.bold,
                                   decoration: TextDecoration.underline,
                                 ),
@@ -176,7 +177,7 @@ class _AlamatEditWidgetState extends State<AlamatEditWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 10.0),
                               child: Text(
-                                'Pastikan alamat yang anda cantumkan sesuai dengan alamat anda ',
+                                'Pastikan nomor telphone yang di ubah sesuai dengan nomor anda',
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
@@ -186,12 +187,12 @@ class _AlamatEditWidgetState extends State<AlamatEditWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 8.0, 10.0, 8.0, 0.0),
                             child: TextFormField(
-                              controller: _model.alamatController,
-                              focusNode: _model.alamatFocusNode,
+                              controller: _model.notlpemergencyController,
+                              focusNode: _model.notlpemergencyFocusNode,
                               autofocus: true,
                               obscureText: false,
                               decoration: InputDecoration(
-                                labelText: 'Alamat ',
+                                labelText: 'New No Tlpn',
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelMedium,
                                 hintStyle:
@@ -227,7 +228,8 @@ class _AlamatEditWidgetState extends State<AlamatEditWidget> {
                                 ),
                               ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
-                              validator: _model.alamatControllerValidator
+                              validator: _model
+                                  .notlpemergencyControllerValidator
                                   .asValidator(context),
                             ),
                           ),
@@ -238,13 +240,15 @@ class _AlamatEditWidgetState extends State<AlamatEditWidget> {
                               onPressed: () async {
                                 await currentUserReference!
                                     .update(createUserAkunRecordData(
-                                  address: _model.alamatController.text,
+                                  emergencyContact:
+                                      _model.notlpemergencyController.text,
                                 ));
                                 await showDialog(
                                   context: context,
                                   builder: (alertDialogContext) {
                                     return AlertDialog(
-                                      content: Text('Alamat Berhasil Diubah'),
+                                      content:
+                                          Text('Nomor Tlpn Berhasil Diubah'),
                                       actions: [
                                         TextButton(
                                           onPressed: () =>

@@ -6,11 +6,13 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
+import 'wallet_widget.dart' show WalletWidget;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class WalletModel extends FlutterFlowModel {
+class WalletModel extends FlutterFlowModel<WalletWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -20,6 +22,7 @@ class WalletModel extends FlutterFlowModel {
       tabBarController != null ? tabBarController!.index : 0;
 
   // State field(s) for Caset widget.
+  FocusNode? casetFocusNode;
   TextEditingController? casetController;
   String? Function(BuildContext, String?)? casetControllerValidator;
   // State field(s) for Switch widget.
@@ -37,7 +40,9 @@ class WalletModel extends FlutterFlowModel {
   void dispose() {
     unfocusNode.dispose();
     tabBarController?.dispose();
+    casetFocusNode?.dispose();
     casetController?.dispose();
+
     bottomBarNavLoginModel.dispose();
   }
 

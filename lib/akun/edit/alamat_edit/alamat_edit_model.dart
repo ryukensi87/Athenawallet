@@ -3,16 +3,19 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'alamat_edit_widget.dart' show AlamatEditWidget;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class AlamatEditModel extends FlutterFlowModel {
+class AlamatEditModel extends FlutterFlowModel<AlamatEditWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
   // State field(s) for alamat widget.
+  FocusNode? alamatFocusNode;
   TextEditingController? alamatController;
   String? Function(BuildContext, String?)? alamatControllerValidator;
 
@@ -22,6 +25,7 @@ class AlamatEditModel extends FlutterFlowModel {
 
   void dispose() {
     unfocusNode.dispose();
+    alamatFocusNode?.dispose();
     alamatController?.dispose();
   }
 
