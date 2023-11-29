@@ -2298,62 +2298,12 @@ class AllowlistCall {
 
 /// End blockchains Group Code
 
-/// Start coingecko Group Code
-
-class CoingeckoGroup {
-  static String baseUrl = 'https://api.coingecko.com/api/v3/';
-  static Map<String, String> headers = {
-    'https': '//api.coingecko.com/api/v3',
-  };
-  static PingCall pingCall = PingCall();
-  static MarketCall marketCall = MarketCall();
-}
-
-class PingCall {
-  Future<ApiCallResponse> call() async {
-    return ApiManager.instance.makeApiCall(
-      callName: 'ping',
-      apiUrl: '${CoingeckoGroup.baseUrl}ping',
-      callType: ApiCallType.GET,
-      headers: {
-        'https': '//api.coingecko.com/api/v3',
-        'https':
-            '//api.coingecko.com/api/v3/ping \\ -H accept: application/json',
-      },
-      params: {},
-      returnBody: true,
-      encodeBodyUtf8: false,
-      decodeUtf8: false,
-      cache: false,
-    );
-  }
-}
-
-class MarketCall {
-  Future<ApiCallResponse> call() async {
-    return ApiManager.instance.makeApiCall(
-      callName: 'market',
-      apiUrl:
-          '${CoingeckoGroup.baseUrl}coins/markets?vs_currency=IDR&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en',
-      callType: ApiCallType.GET,
-      headers: {
-        'https': '//api.coingecko.com/api/v3',
-        'https':
-            '//api.coingecko.com/api/v3/coins/markets?vs_currency=IDR&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en \\ -H accept: application/json',
-      },
-      params: {},
-      returnBody: true,
-      encodeBodyUtf8: false,
-      decodeUtf8: false,
-      cache: false,
-    );
-  }
-}
-
-/// End coingecko Group Code
-
 class CoinMarketCall {
-  static Future<ApiCallResponse> call() async {
+  static Future<ApiCallResponse> call({
+    String? id = '',
+    String? image = '',
+    double? currentPrice,
+  }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'CoinMarket',
       apiUrl:
@@ -2363,7 +2313,11 @@ class CoinMarketCall {
         'https':
             '//api.coingecko.com/api/v3/coins/markets?vs_currency=IDR&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en \\ -H accept: application/json',
       },
-      params: {},
+      params: {
+        '\$.[id]': "true",
+        '\$.[image]': "true",
+        '\$.[current_price]': 0,
+      },
       returnBody: true,
       encodeBodyUtf8: false,
       decodeUtf8: false,

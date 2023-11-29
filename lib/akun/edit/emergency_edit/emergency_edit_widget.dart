@@ -126,7 +126,7 @@ class _EmergencyEditWidgetState extends State<EmergencyEditWidget> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 5.0),
                   child: StreamBuilder<List<UserAkunRecord>>(
                     stream: queryUserAkunRecord(
                       singleRecord: true,
@@ -274,8 +274,8 @@ class _EmergencyEditWidgetState extends State<EmergencyEditWidget> {
                                     .titleSmall
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                 elevation: 4.0,
                                 borderSide: BorderSide(

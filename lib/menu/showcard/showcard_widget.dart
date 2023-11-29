@@ -199,14 +199,14 @@ class _ShowcardWidgetState extends State<ShowcardWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Text(
-                                                  valueOrDefault<String>(
-                                                    getJsonField(
-                                                      listViewCoinMarketResponse
-                                                          .jsonBody,
-                                                      r'''$.name''',
-                                                    ).toString(),
-                                                    'nama',
-                                                  ),
+                                                  (CoinMarketCall.id(
+                                                    listViewCoinMarketResponse
+                                                        .jsonBody,
+                                                  ) as List)
+                                                      .map<String>(
+                                                          (s) => s.toString())
+                                                      .toList()
+                                                      .first,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
@@ -219,11 +219,7 @@ class _ShowcardWidgetState extends State<ShowcardWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  getJsonField(
-                                                    listViewCoinMarketResponse
-                                                        .jsonBody,
-                                                    r'''$.current_price''',
-                                                  ).toString(),
+                                                  'Rp. 31.583.876.58',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
