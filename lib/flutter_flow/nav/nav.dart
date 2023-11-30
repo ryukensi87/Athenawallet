@@ -167,6 +167,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'EmergencyEdit',
               path: 'emergencyEdit',
               builder: (context, params) => EmergencyEditWidget(),
+            ),
+            FFRoute(
+              name: 'DetailPage',
+              path: 'detailPage',
+              builder: (context, params) => DetailPageWidget(
+                namacoin: params.getParam('namacoin', ParamType.String),
+                hargacoin: params.getParam('hargacoin', ParamType.double),
+                gambarcoin: params.getParam('gambarcoin', ParamType.String),
+                kenaikancoin: params.getParam('kenaikancoin', ParamType.double),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

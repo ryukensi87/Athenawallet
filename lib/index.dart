@@ -24,3 +24,4 @@ export '/akun/edit/phone_edit/phone_edit_widget.dart' show PhoneEditWidget;
 export '/akun/edit/alamat_edit/alamat_edit_widget.dart' show AlamatEditWidget;
 export '/akun/edit/emergency_edit/emergency_edit_widget.dart'
     show EmergencyEditWidget;
+export '/menu/detail_page/detail_page_widget.dart' show DetailPageWidget;

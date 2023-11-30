@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/coumpunent/bottom_bar_nav_login/bottom_bar_nav_login_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
@@ -210,611 +211,688 @@ class _WalletWidgetState extends State<WalletWidget>
                               ),
                             ],
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  width: 100.0,
-                                  height: 300.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                          FutureBuilder<ApiCallResponse>(
+                            future: CoinMarketCall.call(),
+                            builder: (context, snapshot) {
+                              // Customize what your widget looks like when it's loading.
+                              if (!snapshot.hasData) {
+                                return Center(
+                                  child: SizedBox(
+                                    width: 50.0,
+                                    height: 50.0,
+                                    child: CircularProgressIndicator(
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                        FlutterFlowTheme.of(context).primary,
+                                      ),
+                                    ),
                                   ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 0.0, 5.0, 0.0),
-                                    child: Column(
-                                      children: [
-                                        Expanded(
-                                          child: TabBarView(
-                                            controller: _model.tabBarController,
-                                            children: [
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        10, 10),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            0,
-                                                                            10)),
-                                                            yData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        5, 5),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            0,
-                                                                            10)),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
-                                                            ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
+                                );
+                              }
+                              final rowCoinMarketResponse = snapshot.data!;
+                              return Row(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      width: 100.0,
+                                      height: 300.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 5.0, 0.0),
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: TabBarView(
+                                                controller:
+                                                    _model.tabBarController,
+                                                children: [
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
                                                         ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: CoinMarketCall
+                                                                    .currentprice(
+                                                                  rowCoinMarketResponse
+                                                                      .jsonBody,
+                                                                )!,
+                                                                yData: CoinMarketCall
+                                                                    .currentprice(
+                                                                  rowCoinMarketResponse
+                                                                      .jsonBody,
+                                                                )!,
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        10, 20),
-                                                                (index) =>
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List.generate(
                                                                     random_data
+                                                                        .randomInteger(
+                                                                            10,
+                                                                            20),
+                                                                    (index) => random_data
                                                                         .randomInteger(
                                                                             0,
                                                                             10)),
-                                                            yData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        15, 15),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomColor()),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
-                                                            ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
-                                                        ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData:
-                                                                List.generate(
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            30,
-                                                                            30),
-                                                                    (index) =>
-                                                                        random_data
-                                                                            .randomString(
-                                                                          15,
-                                                                          15,
-                                                                          true,
-                                                                          false,
-                                                                          false,
-                                                                        )),
-                                                            yData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        15, 15),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomDate()),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
-                                                            ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
-                                                        ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        25, 25),
-                                                                (index) => random_data
-                                                                    .randomDouble(
-                                                                        0.0,
-                                                                        1.0)),
-                                                            yData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        15, 15),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            0,
-                                                                            10)),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
-                                                            ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
-                                                        ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        13, 13),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            0,
-                                                                            10)),
-                                                            yData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        21, 21),
-                                                                (index) =>
-                                                                    random_data
-                                                                        .randomDate()),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
-                                                            ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
-                                                        ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData:
-                                                                List.generate(
+                                                                yData: List.generate(
                                                                     random_data
                                                                         .randomInteger(
                                                                             15,
                                                                             15),
                                                                     (index) =>
                                                                         random_data
-                                                                            .randomString(
-                                                                          25,
-                                                                          25,
-                                                                          true,
-                                                                          false,
-                                                                          false,
-                                                                        )),
-                                                            yData:
-                                                                List.generate(
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            30,
-                                                                            30),
-                                                                    (index) =>
-                                                                        random_data
-                                                                            .randomString(
-                                                                          15,
-                                                                          15,
-                                                                          true,
-                                                                          false,
-                                                                          false,
-                                                                        )),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
+                                                                            .randomColor()),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
                                                             ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
                                                         ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
                                                       ),
                                                     ),
                                                   ),
-                                                ),
-                                              ),
-                                              KeepAliveWidgetWrapper(
-                                                builder: (context) => Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    height: 230.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    child: Container(
-                                                      width: 390.0,
-                                                      height: 350.0,
-                                                      child:
-                                                          FlutterFlowLineChart(
-                                                        data: [
-                                                          FFLineChartData(
-                                                            xData: List.generate(
-                                                                random_data
-                                                                    .randomInteger(
-                                                                        25, 25),
-                                                                (index) =>
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List
+                                                                    .generate(
+                                                                        random_data.randomInteger(
+                                                                            30,
+                                                                            30),
+                                                                        (index) =>
+                                                                            random_data.randomString(
+                                                                              15,
+                                                                              15,
+                                                                              true,
+                                                                              false,
+                                                                              false,
+                                                                            )),
+                                                                yData: List.generate(
                                                                     random_data
+                                                                        .randomInteger(
+                                                                            15,
+                                                                            15),
+                                                                    (index) =>
+                                                                        random_data
+                                                                            .randomDate()),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            25,
+                                                                            25),
+                                                                    (index) => random_data
+                                                                        .randomDouble(
+                                                                            0.0,
+                                                                            1.0)),
+                                                                yData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            15,
+                                                                            15),
+                                                                    (index) => random_data
                                                                         .randomInteger(
                                                                             0,
                                                                             10)),
-                                                            yData:
-                                                                List.generate(
-                                                                    random_data
-                                                                        .randomInteger(
-                                                                            30,
-                                                                            30),
-                                                                    (index) =>
-                                                                        random_data
-                                                                            .randomString(
-                                                                          25,
-                                                                          25,
-                                                                          true,
-                                                                          false,
-                                                                          false,
-                                                                        )),
-                                                            settings:
-                                                                LineChartBarData(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              barWidth: 1.0,
-                                                              isCurved: true,
-                                                              dotData: FlDotData(
-                                                                  show: false),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
                                                             ),
-                                                          )
-                                                        ],
-                                                        chartStylingInfo:
-                                                            ChartStylingInfo(
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondaryBackground,
-                                                          showBorder: false,
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
                                                         ),
-                                                        axisBounds:
-                                                            AxisBounds(),
-                                                        xAxisLabelInfo:
-                                                            AxisLabelInfo(),
-                                                        yAxisLabelInfo:
-                                                            AxisLabelInfo(),
                                                       ),
                                                     ),
                                                   ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment: Alignment(0.0, 0),
-                                          child: FlutterFlowButtonTabBar(
-                                            useToggleButtonStyle: false,
-                                            isScrollable: true,
-                                            labelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      fontSize: 14.0,
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            13,
+                                                                            13),
+                                                                    (index) => random_data
+                                                                        .randomInteger(
+                                                                            0,
+                                                                            10)),
+                                                                yData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            21,
+                                                                            21),
+                                                                    (index) =>
+                                                                        random_data
+                                                                            .randomDate()),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
+                                                        ),
+                                                      ),
                                                     ),
-                                            unselectedLabelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      fontSize: 14.0,
+                                                  ),
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List
+                                                                    .generate(
+                                                                        random_data.randomInteger(
+                                                                            15,
+                                                                            15),
+                                                                        (index) =>
+                                                                            random_data.randomString(
+                                                                              25,
+                                                                              25,
+                                                                              true,
+                                                                              false,
+                                                                              false,
+                                                                            )),
+                                                                yData: List
+                                                                    .generate(
+                                                                        random_data.randomInteger(
+                                                                            30,
+                                                                            30),
+                                                                        (index) =>
+                                                                            random_data.randomString(
+                                                                              15,
+                                                                              15,
+                                                                              true,
+                                                                              false,
+                                                                              false,
+                                                                            )),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
+                                                        ),
+                                                      ),
                                                     ),
-                                            labelColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
-                                            unselectedLabelColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondaryText,
-                                            backgroundColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .primary,
-                                            unselectedBackgroundColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .alternate,
-                                            borderColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .primary,
-                                            unselectedBorderColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .alternate,
-                                            borderWidth: 1.0,
-                                            borderRadius: 8.0,
-                                            elevation: 0.0,
-                                            labelPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    2.0, 0.0, 2.0, 0.0),
-                                            buttonMargin:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    5.0, 0.0, 5.0, 0.0),
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 10.0, 0.0, 10.0),
-                                            tabs: [
-                                              Tab(
-                                                text: '1 HR',
+                                                  ),
+                                                  KeepAliveWidgetWrapper(
+                                                    builder: (context) =>
+                                                        Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  10.0),
+                                                      child: Container(
+                                                        width: double.infinity,
+                                                        height: 230.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        child: Container(
+                                                          width: 390.0,
+                                                          height: 350.0,
+                                                          child:
+                                                              FlutterFlowLineChart(
+                                                            data: [
+                                                              FFLineChartData(
+                                                                xData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            25,
+                                                                            25),
+                                                                    (index) => random_data
+                                                                        .randomInteger(
+                                                                            0,
+                                                                            10)),
+                                                                yData: List
+                                                                    .generate(
+                                                                        random_data.randomInteger(
+                                                                            30,
+                                                                            30),
+                                                                        (index) =>
+                                                                            random_data.randomString(
+                                                                              25,
+                                                                              25,
+                                                                              true,
+                                                                              false,
+                                                                              false,
+                                                                            )),
+                                                                settings:
+                                                                    LineChartBarData(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  barWidth: 1.0,
+                                                                  isCurved:
+                                                                      true,
+                                                                  dotData:
+                                                                      FlDotData(
+                                                                          show:
+                                                                              false),
+                                                                ),
+                                                              )
+                                                            ],
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
                                               ),
-                                              Tab(
-                                                text: '1 MGG',
+                                            ),
+                                            Align(
+                                              alignment: Alignment(0.0, 0),
+                                              child: FlutterFlowButtonTabBar(
+                                                useToggleButtonStyle: false,
+                                                isScrollable: true,
+                                                labelStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Readex Pro',
+                                                          fontSize: 14.0,
+                                                        ),
+                                                unselectedLabelStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Readex Pro',
+                                                          fontSize: 14.0,
+                                                        ),
+                                                labelColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                unselectedLabelColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                backgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                unselectedBackgroundColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                borderColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                unselectedBorderColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                borderWidth: 1.0,
+                                                borderRadius: 8.0,
+                                                elevation: 0.0,
+                                                labelPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            2.0, 0.0, 2.0, 0.0),
+                                                buttonMargin:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            5.0, 0.0, 5.0, 0.0),
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 10.0, 0.0, 10.0),
+                                                tabs: [
+                                                  Tab(
+                                                    text: '1 HR',
+                                                  ),
+                                                  Tab(
+                                                    text: '1 MGG',
+                                                  ),
+                                                  Tab(
+                                                    text: '1 BLN',
+                                                  ),
+                                                  Tab(
+                                                    text: '3 BLN',
+                                                  ),
+                                                  Tab(
+                                                    text: '6 BLN',
+                                                  ),
+                                                  Tab(
+                                                    text: '1 THN',
+                                                  ),
+                                                  Tab(
+                                                    text: '5 THN',
+                                                  ),
+                                                ],
+                                                controller:
+                                                    _model.tabBarController,
                                               ),
-                                              Tab(
-                                                text: '1 BLN',
-                                              ),
-                                              Tab(
-                                                text: '3 BLN',
-                                              ),
-                                              Tab(
-                                                text: '6 BLN',
-                                              ),
-                                              Tab(
-                                                text: '1 THN',
-                                              ),
-                                              Tab(
-                                                text: '5 THN',
-                                              ),
-                                            ],
-                                            controller: _model.tabBarController,
-                                          ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ),
-                            ],
+                                ],
+                              );
+                            },
                           ),
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(

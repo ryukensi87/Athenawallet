@@ -2299,11 +2299,7 @@ class AllowlistCall {
 /// End blockchains Group Code
 
 class CoinMarketCall {
-  static Future<ApiCallResponse> call({
-    String? id = '',
-    String? image = '',
-    double? currentPrice,
-  }) async {
+  static Future<ApiCallResponse> call() async {
     return ApiManager.instance.makeApiCall(
       callName: 'CoinMarket',
       apiUrl:
@@ -2313,11 +2309,7 @@ class CoinMarketCall {
         'https':
             '//api.coingecko.com/api/v3/coins/markets?vs_currency=IDR&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en \\ -H accept: application/json',
       },
-      params: {
-        '\$.[id]': "true",
-        '\$.[image]': "true",
-        '\$.[current_price]': 0,
-      },
+      params: {},
       returnBody: true,
       encodeBodyUtf8: false,
       decodeUtf8: false,
